@@ -1,8 +1,12 @@
 # Leetcode Top Interview 150
 
-![Leetcode Logo](https://leetcode.com/static/images/LeetCode_logo.png)
+<img src="https://leetcode.com/static/images/LeetCode_logo.png" alt="LeetCode Logo" width="85">
 
 This repository contains solutions to the Leetcode Top Interview 150 problems. These problems are commonly asked in technical interviews and cover a wide range of topics, including data structures, algorithms, and problem-solving techniques.
+
+
+[![Leetcode Stats](https://leetcard.jacoblin.cool/ChunhThanhDe?ext=contest)](https://leetcode.com/ChunhThanhDe)
+
 
 ## What is Leetcode?
 
@@ -25,6 +29,6 @@ Feel free to contribute to this repository by submitting your own solutions or i
 ## Resources
 
 - [Leetcode](https://leetcode.com/)
-- [Top Interview Questions - Leetcode](https://leetcode.com/studyplan/top-interview-150/)
+- [Top 150 Interview Questions - Leetcode](https://leetcode.com/studyplan/top-interview-150/)
 
 Happy coding and good luck with your interview preparation!
