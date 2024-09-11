@@ -3,7 +3,7 @@
 **Difficulty**: **Easy**  
 **Tags**: **Array**, **Two Pointers**, **Sorting**
 
-[[Vietnamese version here]](1. Array - String\001. Merge Sorted Array\README_VI.md)
+[[Vietnamese version here]](1.%20Array%20-%20String/001.%20Merge%20Sorted%20Arrayy\README_VI.md)
 
 ---
 
@@ -103,4 +103,4 @@ class Solution {
 }
 ```
 
-You can find the full `Solution.java` file [here](1. Array - String\001. Merge Sorted Array\Solution.java).
+You can find the full `Solution.java` file [here](1.%20Array%20-%20String/001.%20Merge%20Sorted%20Array\Solution.java).
