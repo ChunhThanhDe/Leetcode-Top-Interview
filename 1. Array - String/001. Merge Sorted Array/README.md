@@ -1,9 +1,6 @@
 ## 88. Merge Sorted Arrays 🧩
 
-**Difficulty**: `Easy`
-**Tags**: `Array`, `Two Pointers`, `Sorting`
-
-[[Vietnamese version here]](README_VI.md)
+**Difficulty**: `Easy` - **Tags**: `Array`, `Two Pointers`, `Sorting`
 
 ---
 
