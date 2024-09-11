@@ -3,6 +3,8 @@
 **Difficulty**: **Easy**  
 **Tags**: **Array**, **Two Pointers**, **Sorting**
 
+[[Vietnamese version here]](1. Array - String\001. Merge Sorted Array\README_VI.md)
+
 ---
 
 ### Description 📋
