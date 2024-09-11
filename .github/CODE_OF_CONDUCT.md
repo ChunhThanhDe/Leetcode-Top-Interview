@@ -2,14 +2,14 @@
 
 ## 1. Time Complexity ⏱️
 
-**General Formula 📏**
+### General Formula 📏
 
 Time complexity measures how the number of operations an algorithm performs grows relative to the size of its input. It is often expressed using Big-O notation to indicate growth rates.
 
 ### Complexity Classes
 
 - **O(1)**: Fixed number of operations regardless of input size.
-  - *Example*: Accessing an element in an array. 📦
+  - **Example**: Accessing an element in an array. 📦
   ```java
   int element = array[5]; // Constant time operation
   ```
@@ -17,7 +17,7 @@ Time complexity measures how the number of operations an algorithm performs grow
   - **Result**: Time complexity = **O(1)**
 
 - **O(log n)**: Operations reduce the input size exponentially at each step.
-  - *Example*: Binary search in a sorted array. 🔍
+  - **Example**: Binary search in a sorted array. 🔍
   ```java
   while (low <= high) {
       int mid = (low + high) / 2;
@@ -34,7 +34,7 @@ Time complexity measures how the number of operations an algorithm performs grow
   - **Result**: Time complexity = **O(log n)**
 
 - **O(n)**: Operations scale linearly with the input size.
-  - *Example*: Iterating through an array or list. 📋
+  - **Example**: Iterating through an array or list. 📋
   ```java
   for (int i = 0; i < n; i++) {
       // Process each element
@@ -47,7 +47,7 @@ Time complexity measures how the number of operations an algorithm performs grow
   - **Result**: Time complexity = **O(n)**
 
 - **O(n log n)**: Typically seen in divide and conquer algorithms.
-  - *Example*: MergeSort or QuickSort. 🛠️
+  - **Example**: MergeSort or QuickSort. 🛠️
   ```java
   mergeSort(array, left, right);
   ```
@@ -58,7 +58,7 @@ Time complexity measures how the number of operations an algorithm performs grow
   - **Result**: Time complexity = **O(n log n)**
 
 - **O(n²)**: Operations involve nested iterations over the input.
-  - *Example*: Bubble Sort. 🔄
+  - **Example**: Bubble Sort. 🔄
   ```java
   for (int i = 0; i < n; i++) {
       for (int j = 0; j < n - i - 1; j++) {
@@ -73,7 +73,7 @@ Time complexity measures how the number of operations an algorithm performs grow
   - **Result**: Time complexity = **O(n²)**
 
 - **O(2^n)**: Complexity grows exponentially, often seen in naive recursive solutions.
-  - *Example*: Naive Fibonacci calculation. 📈
+  - **Example**: Naive Fibonacci calculation. 📈
   ```java
   if (n <= 1) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
@@ -97,14 +97,14 @@ Time complexity measures how the number of operations an algorithm performs grow
 
 ## 2. Space Complexity 💾
 
-**General Formula 🧩**
+### General Formula 🧩
 
 Space complexity measures the additional memory an algorithm uses relative to the input size.
 
 ### Complexity Classes
 
 - **O(1)**: Fixed amount of memory used regardless of input size.
-  - *Example*: Using a few variables. 🗃️
+  - **Example**: Using a few variables. 🗃️
   ```java
   int count = 0; // Constant space
   ```
@@ -112,7 +112,7 @@ Space complexity measures the additional memory an algorithm uses relative to th
   - **Result**: Space complexity = **O(1)**
 
 - **O(n)**: Memory usage is proportional to the input size.
-  - *Example*: Storing an array. 🗂️
+  - **Example**: Storing an array. 🗂️
   ```java
   int[] array = new int[n]; // Linear space
   ```
@@ -123,7 +123,7 @@ Space complexity measures the additional memory an algorithm uses relative to th
   - **Result**: Space complexity = **O(n)**
 
 - **O(n²)**: Memory usage grows quadratically with input size.
-  - *Example*: Storing a matrix. 🗃️🗃️
+  - **Example**: Storing a matrix. 🗃️🗃️
   ```java
   int[][] matrix = new int[n][n]; // Quadratic space
   ```
@@ -149,5 +149,3 @@ To calculate the time and space complexity of an algorithm:
 
 - Examine loops, recursion, and additional data structures.
 - Focus on terms with the fastest growth rates as the input size increases. 🚀
-
----
