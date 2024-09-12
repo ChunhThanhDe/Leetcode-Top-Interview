@@ -3,7 +3,7 @@ public class Solution {
 
         // if the array has tw0 or fewer element, return its length directly
         // since it can't contain more than 2 duplicates
-        if (nums.lenth <= 2) return nums.length;
+        if (nums.length <= 2) return nums.length;
 
         // 'k' is index where the next unique or allowed element will be placed
         // Initialize 'k' = 2, allowing the first two element to be present
@@ -14,7 +14,7 @@ public class Solution {
 
             // if the current element 'nums[i]' is not the same with the element two positions before 'nums[k - 2]'
             // it means this element can be keep (because allow at most two element duplicates)
-            if (nums[i] != nums[i - 2]){
+            if (nums[i] != nums[k - 2]){
 
                 // move the current element 'nums[i]' to the position 'k' and increment 'k'
                 nums[k++] = nums[i];
