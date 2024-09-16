@@ -28,4 +28,4 @@ public class Solution {
         // After the loop, `majority` will hold the majority element
         return majority;
     }
-}vs
+}
