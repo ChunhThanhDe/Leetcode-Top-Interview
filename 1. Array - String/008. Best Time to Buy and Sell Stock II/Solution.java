@@ -12,7 +12,7 @@ class Solution {
             if(prices[i] > prices[i - 1]){
                 // Calculator the profit from buying yesterday and selling to day,
                 // and add it to the total profit
-                profit = prices[i] + prices[i - 1];
+                profit += prices[i] - prices[i - 1];
             }
         }
 
