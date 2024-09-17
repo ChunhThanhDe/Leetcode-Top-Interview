@@ -1,18 +1,25 @@
 public class Solution {
     public boolean canJump(int[] nums) {
+
+        // Tracks the farthest index 
         int maxReach = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            // If maxReach < i, it will not be possible to jump over i, so break
-            if (i > maxReach) {
-                break;
-            }
+        // loop through each index in the nums
+        for (int i = 0; i < nums.length; i++){
 
-            // This algorithm is to find the farthest point that can be jumped
-            maxReach = Math.max(maxReach, i + nums[i]);
+            // if the maxReach higher or equal nums.length, 
+            // it mean we can reach the last index,
             if (maxReach >= nums.length - 1) return true;
+
+            // if the current index is higher than current maxReach,
+            // we can not move forward
+            if (i > maxReach) return false;
+
+            // update maxReach if the current position + jump value is farther 
+            maxReach = Math.max(maxReach, i + nums[i]);
         }
 
-        return maxReach >= nums.length - 1;
+        // return false if can find way to reach the last index
+        return false;
     }
 }
