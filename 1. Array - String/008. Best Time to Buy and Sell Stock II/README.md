@@ -1,11 +1,13 @@
-## Best Time to Buy and Sell Stock II
+## 122. Best Time to Buy and Sell Stock II 📈💰
+
+**Difficulty**: `Medium` - **Tags**: `Array`, `Greedy`, `Dynamic Programming`
 
 ### Description
 You are given an integer array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
 
-On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day.
+On each day, you may decide to buy and/or sell the stock. You can only hold at most **one share** of the stock at any time. However, you can buy it and then immediately sell it on the same day.
 
-Find and return the maximum profit you can achieve.
+Find and return the **maximum profit** you can achieve.
 
 ### Examples
 
@@ -56,3 +58,27 @@ Output:
 
 Explanation:
 There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
+
+---
+
+### Solution 💡
+
+The time complexity is $O(n)$, and the space complexity is $O(1)$, where $n$ is the number of days.
+
+#### Java
+
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int profit = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] > prices[i - 1]) {
+                profit += prices[i] - prices[i - 1];
+            }
+        }
+        return profit;
+    }
+}
+```
+
+You can find the full `Solution.java` file [here](Solution.java).
