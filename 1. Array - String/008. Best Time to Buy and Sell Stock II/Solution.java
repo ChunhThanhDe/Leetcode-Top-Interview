@@ -5,7 +5,7 @@ class Solution {
         int profit = 0;
 
         // loop through the prices starting from second day
-        for (int 1 = 1; i < prices.length; i+=){
+        for (int i = 1; i < prices.length; i++){
 
             // if today's price is higher than yesterday's price.
             // there is an opportunity to make a profit
