@@ -1,4 +1,6 @@
-## Insert Delete GetRandom O(1)
+## 380. Insert Delete GetRandom O(1) 🎲
+
+**Difficulty**: `Medium` - **Tags**: `Design`, `Hash Table`, `Randomized`
 
 ### Description
 Implement the `RandomizedSet` class:
@@ -36,3 +38,65 @@ randomizedSet.remove(1); // Removes 1 from the set, returns true. Set now contai
 randomizedSet.insert(2); // 2 was already in the set, so return false.
 randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom() will always return 2.
 ```
+
+---
+
+### Solution 💡
+
+Use a hash map to store the elements and their indices in an array. This allows O(1) time complexity for insertion, deletion, and getting a random element.
+
+#### Java
+
+```java
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
+
+class RandomizedSet {
+    private HashMap<Integer, Integer> map;
+    private ArrayList<Integer> list;
+    private Random rand;
+
+    /** Initialize your data structure here. */
+    public RandomizedSet() {
+        map = new HashMap<>();
+        list = new ArrayList<>();
+        rand = new Random();
+    }
+
+    /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
+    public boolean insert(int val) {
+        if (map.containsKey(val)) return false;
+        map.put(val, list.size());
+        list.add(val);
+        return true;
+    }
+
+    /** Removes a value from the set. Returns true if the set contained the specified element. */
+    public boolean remove(int val) {
+        if (!map.containsKey(val)) return false;
+        int index = map.get(val);
+        int lastElement = list.get(list.size() - 1);
+        list.set(index, lastElement);
+        map.put(lastElement, index);
+        list.remove(list.size() - 1);
+        map.remove(val);
+        return true;
+    }
+
+    /** Get a random element from the set. */
+    public int getRandom() {
+        return list.get(rand.nextInt(list.size()));
+    }
+}
+```
+
+#### Time Complexity ⏳
+- `insert` operation: **O(1)**
+- `remove` operation: **O(1)**
+- `getRandom` operation: **O(1)**
+
+#### Space Complexity 💾
+- The space complexity is **O(n)**, where `n` is the number of elements in the set, due to the storage in the hash map and the list.
+
+You can find the full `Solution.java` file [here](Solution.java).
