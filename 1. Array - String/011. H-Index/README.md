@@ -75,4 +75,4 @@ Thus, the overall time complexity is **O(n log n)**.
 #### Space Complexity 💾
 - The space complexity is **O(1)** since the sorting is done in-place and we are using only a few extra variables.
 
-You can find the full `Solution.java` file [here](Solution.java) and the best Solution is [here](Solution2.java).
+You can find the full `Solution.java` file [here](Solution2.java) and the best Solution is [here](Solution.java).
