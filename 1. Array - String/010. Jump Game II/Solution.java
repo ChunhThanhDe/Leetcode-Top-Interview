@@ -1,36 +1,30 @@
 class Solution {
     public int jump(int[] nums) {
         int n = nums.length;
-        int currentJumpEnd = 0;
-        int maxReach = 0;
-        int jumps = 0;
+        int jumps = 0; // the number of jumps made so far
+        int currentJumpEnd = 0; // the farthest point that can be reached with current jump
+        int maxReach = 0; // the farthest point of jumps that can be reached overall
 
+        // loop through the array but stop at the second-the-last element
+        // since we donn't need to jump from the last element 
         for (int i = 0; i < n - 1; i++) {
-            // i is the point to jump to
 
-            // find the best jumping pair i j with the value of num[i], 
-            // the best jumping pair is the pair that will cover all values of other jumping pairs
-            
-            // If maxReach is larger, it shows that the old jump point covers 
-            // the entire jump distance including the new jump point
-
-            // if i + nums[i] is larger, it shows a new way to jum best
+            // update the maxReach to be farthest point that can be reached from index i
             maxReach = Math.max(maxReach, i + nums[i]);
 
-            // if maxReach out to length is the final jump
+            // if maxReach is already beyond or at the last element, we can stop here
             if (maxReach >= n - 1) {
-                jumps++;
-                break;
+                jumps++; // make the final jump
+                break; // Exit loop
             }
 
-            // if point to jump == currentJumpEnd -> There is no better jump point than 
-            // the current jump point, proceed to jump
+            // if we have reached the farthest point we can go with the jump with current maxReach
             if (i == currentJumpEnd) {
-                currentJumpEnd = maxReach;
-                jumps++;
+                currentJumpEnd = maxReach; // setup the next jump range
+                jumps++; // increment the jumps count
             }
         }
 
-        return jumps;
+        return jumps; // return the minimum number of jumps to reach `nums[n - 1]`
     }
 }
