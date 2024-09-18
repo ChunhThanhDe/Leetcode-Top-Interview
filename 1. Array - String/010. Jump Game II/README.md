@@ -67,3 +67,4 @@ class Solution {
 }
 ```
 
+You can find the full `Solution.java` file [here](Solution.java).
