@@ -1,7 +1,3 @@
-Here's the README for the "Rotate Array" problem:
-
----
-
 ## 189. Rotate Array 🔄
 
 **Difficulty**: `Medium` - **Tags**: `Array`, `Two Pointers`, `Mathematics`
