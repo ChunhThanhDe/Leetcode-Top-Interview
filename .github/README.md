@@ -1,4 +1,4 @@
-# Leetcode Top Interview 150
+# Leetcode Top Interview 🎡
 
 <img src="https://leetcode.com/static/images/LeetCode_logo.png" alt="LeetCode Logo" width="85">
 
