@@ -103,3 +103,5 @@ class Solution {
 
 ### Space Complexity 💾
 - The space complexity is **O(n)** because we are using an extra array to store the number of candies for each child.
+
+You can find the full solution [here](Solution.java).
