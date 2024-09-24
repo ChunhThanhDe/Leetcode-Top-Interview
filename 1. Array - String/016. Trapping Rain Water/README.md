@@ -1,4 +1,4 @@
-## 42. Trapping Rain Water 🌧️
+## Trapping Rain Water 🌧️
 
 **Difficulty**: `Medium` - **Tags**: `Stack`, `Array`, `Two Pointers`, `Dynamic Programming`, `Monotonic Stack`
 
