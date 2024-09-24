@@ -2,10 +2,12 @@
 
 **Difficulty**: `Medium` - **Tags**: `Stack`, `Array`, `Two Pointers`, `Dynamic Programming`, `Monotonic Stack`
 
+[LeetCode Problem Link](https://leetcode.com/problems/trapping-rain-water/description/)
+
 ### Description
 Given `n` non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
 
-![](rainwatertrap.png)
+![rainwatertrap](rainwatertrap.png)
 
 ### Examples
 
@@ -85,4 +87,4 @@ class Solution {
 #### Space Complexity 💾
 - The space complexity is **O(1)**, as we only use a few variables for tracking.
 
-You can find the full solution [here](Solution.java).
+You can find the full solution [here](Solution.java) of another solution [here](AnotherSolution.java).
