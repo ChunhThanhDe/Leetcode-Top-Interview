@@ -1,4 +1,4 @@
-## 13. Roman to Integer Conversion 🔢
+## Roman to Integer Conversion 🔢
 
 **Difficulty**: `Easy` - **Tags**: `Hash Table`, `Math`, `String`
 

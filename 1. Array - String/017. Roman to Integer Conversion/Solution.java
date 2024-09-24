@@ -1,6 +1,14 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
     public int romanToInt(String s) {
+        // Create a HashMap to store Roman numeral symbols and their corresponding
+        // integer values Using Map instead of HashMap allows for greater flexibility
+        // and adherence to object-oriented principles
         Map<Character, Integer> symbolValues = new HashMap<>();
+
+        // initialize roman numerals key and value
         symbolValues.put('I', 1);
         symbolValues.put('V', 5);
         symbolValues.put('X', 10);
@@ -9,18 +17,22 @@ class Solution {
         symbolValues.put('D', 500);
         symbolValues.put('M', 1000);
 
-        int result = 0;
+        int total = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            int value = symbolValues.get(s.charAt(i));
+            // get the current Roman numerals's integer value
+            int current = symbolValues.get(s.charAt(i));
 
-            if (i + 1 < s.length() && value < symbolValues.get(s.charAt(i + 1))) {
-                result -= value;
+            // if the next numeral is langer, it mean we should subtract the current value
+            if (i + 1 < s.length() && current < symbolValues.get(s.charAt(i + 1))) {
+                // subtract current value from total
+                total -= current;
             } else {
-                result += value;
+                // add current value to total
+                total += current;
             }
         }
 
-        return result;
+        return total;
     }
 }
