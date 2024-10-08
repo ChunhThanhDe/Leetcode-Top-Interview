@@ -1,4 +1,4 @@
-## 12. Integer to Roman Conversion 🔢
+## 12. Integer to Roman 🔢
 
 **Difficulty**: `Medium` - **Tags**: `Math`, `Greedy`
 
