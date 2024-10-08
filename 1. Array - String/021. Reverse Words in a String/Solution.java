@@ -1,21 +1,28 @@
 class Solution {
-    public String reverseWords(String s) {
-
-        // Removes spaces that appear at the beginning and end of the string.
+    // function to reverse the words in a given string
+    public String reverseWords(String s){
+        // remove spaces that appear at the beginning and end of the string
         String trimmedString = s.trim();
 
-        // Convert String to list of String separated by spaces
+        // convert the trimmed string into an array of words,
+        // splitting by one of more whitespace characters.
         String[] words = trimmedString.split("\\s+");
-        
+
+        // initialize a StringBuilder to construct the reversed string.
         StringBuilder reversedString = new StringBuilder();
-        
-        for (int i = words.length - 1; i >= 0; i--) {
+
+        // loop through the array of words in the reverse order
+        for (int i = words.length - 1; i >= 0; i --){
             reversedString.append(words[i]);
-            if (i > 0) {
+
+            // if we are not at the first word, add a space after the word.
+            if (i > 0){
                 reversedString.append(" ");
             }
         }
-        
+
+        // return the final reversed string as a regular String.
         return reversedString.toString();
+         
     }
 }
