@@ -1,6 +1,6 @@
-## Trapping Rain Water 🌧️
+## 42. Trapping Rain Water 🌧️
 
-**Difficulty**: `Medium` - **Tags**: `Stack`, `Array`, `Two Pointers`, `Dynamic Programming`, `Monotonic Stack`
+**Difficulty**: `Hard` - **Tags**: `Stack`, `Array`, `Two Pointers`, `Dynamic Programming`, `Monotonic Stack`
 
 [LeetCode Problem Link](https://leetcode.com/problems/trapping-rain-water/description/)
 
