@@ -1,18 +1,28 @@
 class Solution {
-    public int strStr(String haystack, String needle) {
-        if (needle.isEmpty()){
-            return 0;
+    // Method to find the first of the substring "needle" in the string "haystack"
+    public int strStr(String hayStack, String needle) {
+        // get the length of hayStack and needle
+        int hLength = hayStack.length();
+        int nLength = needle.length();
+
+        // if needle if an empty String, return 0
+        if (nLength == 0) {
+            return 0; // empty meedle matches at the start
         }
 
-        int haystackLength = haystack.length();
-        int needleLength = needle.length();
-
-        for (int i = 0; i <= haystackLength - needleLength; i++){
-            if(haystack.substring(i, i + needleLength).equals(needle)){
-                return i;
+        // loop through hayStack to find a match for needle,
+        // Only loop to hLength - nLength because a substring longer than hayStack's
+        // remainder wouldn't match
+        for (int i = 0; i <= hLength - nLength; i++) {
+            // get the substring from haystack and compare it with needle
+            if (hayStack.substring(i, i + nLength).equals(needle)) {
+                return i; // if found return the staring index
             }
         }
 
+        // if no match is found, return -1 to indicate needle is not in haystack
         return -1;
+
     }
+
 }
