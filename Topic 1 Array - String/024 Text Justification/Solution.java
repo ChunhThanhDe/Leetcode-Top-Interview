@@ -1,72 +1,62 @@
-class Solution {
-    public List<String> fullJustify(String[] words, int maxWidth) {
+import java.util.List;
+import java.util.ArrayList;
+
+/**
+ * Solution
+ */
+public class Solution {
+
+    // method to fully justify the given words to fit a specified maxwidth
+    public List<String> fullJustify(String[] words, int maxwidth){
         int n = words.length;
-        int[] lengWorks = new int[n];
+        int i = 0; // index to track position 
 
-        for (int i = 0; i < n; i++) {
-            lengWorks[i] = words[i].length();
-        }
-
-        int countWidth = 0;
-        List<String> elementResult = new ArrayList<>();
         List<String> result = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
+        // process th words in groups that ca fit in one line
+        while (i < n) {
+            int lineLength = words[i].length();
+            int last = i + 1; // track the position of the next words
 
-            elementResult.add(words[i]);
-            countWidth += lengWorks[i] + 1;
-
-            System.out.println("elementResult " + elementResult);
-            System.out.println("countWidth " + countWidth);
-
-            if (i == n - 1) {
-                countWidth--;
-                StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.append(elementResult.get(0));
-                for (int o = 1; o < elementResult.size(); o++) {
-                    stringBuilder.append(" ");
-                    stringBuilder.append(elementResult.get(o));
-                }
-                stringBuilder.append(" ".repeat(maxWidth - countWidth));
-                System.out.println("String.valueOf(stringBuilder) " + String.valueOf(stringBuilder).length());
-                result.add(String.valueOf(stringBuilder));
-            } else if (countWidth + lengWorks[i + 1] > maxWidth) {
-                countWidth--;
-                StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.append(elementResult.get(0));
-
-                if (elementResult.size() == 1) {
-                    stringBuilder.append(" ".repeat(maxWidth - countWidth));
-                } else {
-                    int space = (maxWidth - countWidth + elementResult.size() - 1) / (elementResult.size() - 1);
-                    int spaceLeft = (maxWidth - countWidth + elementResult.size() - 1) % (elementResult.size() - 1);
-
-                    System.out.println("space " + space);
-                    System.out.println("spaceLeft " + spaceLeft);
-
-                    for (int j = 1; j < elementResult.size(); j++) {
-                        if (spaceLeft > 0) {
-                            stringBuilder.append(" ".repeat(space + 1));
-                            spaceLeft--;
-                        } else {
-                            stringBuilder.append(" ".repeat(Math.max(1, space)));
-                        }
-
-                        stringBuilder.append(elementResult.get(j));
-                    }
-                }
-
-                System.out.println("stringBuilder " + stringBuilder);
-                System.out.println("String.valueOf(stringBuilder) " + String.valueOf(stringBuilder).length());
-                result.add(String.valueOf(stringBuilder));
-                elementResult = new ArrayList<>();
-                System.out.println("result " + result);
-                countWidth = 0;
+            // Calculate how many words can fit in the current line
+            // keep adding words to the line until adding another would would exceed maxwidth
+            while (last < n && lineLength + 1 + words[last].length() <= maxwidth){
+                lineLength += 1 + words[last].length(); // update the current line length (+ 1 for space)
+                last++;
             }
 
+            StringBuilder sb = new StringBuilder(); // sb to construct the justified line
+            int wordCount = last - i; // count how many word in this line
+
+            // if it's the last line or there is only word. left justify
+            if (last == n || wordCount == 1){
+                for(int j = i; j  < last; j ++){
+                    sb.append(words[j]); // append each word to the line
+                    if (j < last - 1) sb.append(" "); // add a single space between words
+                }
+
+                // fill the remaining space to ensure the line matches maxWidth
+                sb.append(" ".repeat(maxwidth - sb.length()));
+            } else {
+                //calculate the total number of space to distribute between words
+                int totalSpaces = maxwidth - lineLength + wordCount - 1; // Extra space to fill
+                int spaceBetWeen = totalSpaces / (wordCount - 1); // base number of spaces between word
+                int extraSpaces = totalSpaces % (wordCount - 1); // Extra spaces to distribute evenly
+
+                // distribute spaces  between the words
+                for (int j = i; j < last - 1; j ++){
+                    sb.append(words[j]); // append each word
+                    // add spaces: some words get an extra if extraSpaces > 0
+                    sb.append(" ".repeat(spaceBetWeen + (extraSpaces-- > 0 ? 1 : 0 )));
+                }
+                sb.append(words[last - 1]); // add the last word in the line without extra space after it
+            }
+
+            result.add(sb.toString()); // add the fully justified line to the result
+            i = last; // move to the next set of words
         }
 
-        return result;
-    }
+        return result; // return the list of justified lines
 
+    }
 }
