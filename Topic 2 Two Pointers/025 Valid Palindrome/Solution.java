@@ -1,20 +1,33 @@
-class Solution {
-    public static boolean isPalindrome(String s) {
-        // Convert to lowercase and remove non-alphanumeric characters
-        String cleanString = s.toLowerCase().replaceAll("[^a-z0-9]", "");
+public class Solution {
+    public boolean isPalindrome(String s) {
+        // step 1: filter out non-alphanumeric character and convert to lowercase for
+        // uniform comparison
+        StringBuilder filteredStr = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            // check if character is alphanumeric (letter of digit)
+            if (Character.isLetterOrDigit(c)) {
+                // convert to lowercase and append
+                filteredStr.append(Character.toLowerCase(c));
+            }
+        }
 
-        // Check if the clean string is a palindrome
+        // step 2: Apply the two-pointer technique to check if the filtered string is a
+        // palindrome
+        // initialize two pointers at the start and end
         int left = 0;
-        int right = cleanString.length() - 1;
-        
+        int right = filteredStr.length() - 1;
+
         while (left < right) {
-            if (cleanString.charAt(left) != cleanString.charAt(right)) {
+            // if the characters at left and right pointer don't match. it not a palindrome
+            if (filteredStr.charAt(left) != filteredStr.charAt(right)) {
                 return false;
             }
+            // move left and right pointer
             left++;
             right--;
         }
-        
+
+        // if all characters match, filtered Sting is a palindrome
         return true;
     }
 }
