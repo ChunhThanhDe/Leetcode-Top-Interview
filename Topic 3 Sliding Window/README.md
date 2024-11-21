@@ -1,4 +1,4 @@
-# Sliding Window Technique 🚪✨
+# Topic 3 Sliding Window
 
 The **Sliding Window** technique is a highly efficient approach in programming, particularly useful for solving problems involving arrays or strings. This technique optimizes operations on subsets of data to find results like maximum sum, length, or count of elements. Let's break it down step by step! 🏊‍♂️
 

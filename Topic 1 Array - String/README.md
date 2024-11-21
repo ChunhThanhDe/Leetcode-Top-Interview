@@ -1,10 +1,10 @@
-# Fundamental in Algorithmic Problem Solving Array & String 📚✨
+# Topic 1 Array - String
 
 Arrays and strings are foundational structures in computer science and algorithmic problem solving. They are often used to model real-world data and come with a variety of techniques to process, manipulate, and optimize their usage efficiently. Here are key techniques and topics commonly used in problems involving arrays and strings. 🚀
 
 ---
 
-## 📌 Topics Overview
+## 📌 Fundamental in Algorithmic Problem Solving Array & String
 
 ### 1. **Basic Array & String processing** 📖
 Arrays and strings are basic data structures where arrays hold a collection of elements, and strings represent sequences of characters. Many algorithmic problems involve processing these structures, such as searching, sorting, and finding optimal subsets or sequences.
