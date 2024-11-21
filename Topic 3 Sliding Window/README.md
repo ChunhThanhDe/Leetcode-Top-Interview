@@ -49,7 +49,7 @@ Find the maximum sum of any contiguous subarray of size `k` in an array.
 ### Code
 
 ```dart
-int maxSumOfSubarray(List<int> arr, int k) {
+int maxSumOfSubArray(List<int> arr, int k) {
   int n = arr.length;
   if (n < k) return -1; // Not enough elements
 
@@ -73,7 +73,7 @@ int maxSumOfSubarray(List<int> arr, int k) {
 void main() {
   List<int> arr = [2, 3, 5, 2, 9, 7, 1];
   int k = 3;
-  print(maxSumOfSubarray(arr, k)); // Output: 18
+  print(maxSumOfSubArray(arr, k)); // Output: 18
 }
 ```
 
