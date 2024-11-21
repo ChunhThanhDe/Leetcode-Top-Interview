@@ -1,4 +1,4 @@
-# Topic Two Pointers
+# Topic 2 Two Pointers
 
 ![](example-2.gif)
 
