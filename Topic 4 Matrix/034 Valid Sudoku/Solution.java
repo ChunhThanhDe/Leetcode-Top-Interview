@@ -1,40 +1,38 @@
-class Solution {
-  public boolean isValidSudoku(char[][] board) {
-    int N = 9;
-    int[][] rows = new int[N][N];
-    int[][] cols = new int[N][N];
-    int[][] boxes = new int[N][N];
-    for (int r = 0; r < N; r++) {
-      for (int c = 0; c < N; c++) {
-        // If the current cell is empty, skip it
-        if (board[r][c] == '.') {
-          continue;
+// input: a 9 x 9 Sudoku broad as a 2D character array (char[][])
+// output: return the true if the broad is valid. false otherwise
+// key points: Validate rows, columns, and 3x3 sub-boxed for duplicates.
+
+import java.util.HashSet;
+
+public class Solution {
+  public boolean isValidSudoku(char[][] broad){
+
+    // Use a hashSet to store the numbers in rows, columns and 3x3 box
+    HashSet<String> seen = new HashSet<>();
+
+    // Iterate through each cell of the 9x9  broad
+    for (int i = 0; i < 9; i++){ // loop over rows
+      for (int j = 0; j < 9; j++){ // loop over columns
+        char current = broad[i][j];
+
+        // if the cell is not empty. validate it
+        if (current != '.'){
+          // create unique keys for row, columns and box checks
+          String row = "row" + i + current; // row key
+          String col = "col" + j + current; // Column key
+          String box = "box" + (i/3) + (j/3) + current; // box key
+
+          // check if the current number already exits in row, columns, or box
+          // if any key is already in the set, the broad is invalid
+          if (!seen.add(row) || !seen.add(col) || !seen.add(box)){
+            // return false if duplicate is found
+            return false;
+          }
         }
-        // Convert the character to its corresponding index (0-8)
-        int pos = board[r][c] - '1';
-        // Check if the current number has already appeared in the same row
-        if (rows[r][pos] == 1) {
-          return false;
-        }
-        // Mark the current number as appeared in the row
-        rows[r][pos] = 1;
-        // Check if the current number has already appeared in the same column
-        if (cols[c][pos] == 1) {
-          return false;
-        }
-        // Mark the current number as appeared in the column
-        cols[c][pos] = 1;
-        // Calculate the index of the 3x3 box containing the current cell
-        int idx = (r / 3) * 3 + c / 3;
-        // Check if the current number has already appeared in the same 3x3 box
-        if (boxes[idx][pos] == 1) {
-          return false;
-        }
-        // Mark the current number as appeared in the 3x3 box
-        boxes[idx][pos] = 1;
       }
     }
-    // If we made it through the entire board without returning false, the Sudoku is valid
+
+    // if no duplicates are found, the broad is valid
     return true;
   }
 }
