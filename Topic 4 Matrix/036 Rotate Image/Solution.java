@@ -1,28 +1,32 @@
-class Solution {
-    public void rotate(int[][] matrix) {
-        int cols = matrix.length;
-        int row = matrix[0].length;
+// input: an nxn 2D matrix
+// output: the matrix rotated 90 degrees clockwise
 
-        int k = 0;
+public class Solution {
+    public void rotate(int[][] matrix){
 
-        for (int i = 0; i < cols ; i++){
-            for (int j = k; j < row; j++){
-                int temp = matrix[i][j];
+        int n = matrix.length;
+
+        // step 1: transpose the matrix
+        for (int i = 0; i < n; i++){
+            for (int j = i + 1; j < n; j++){
+                // Swap elements diagonally
+                int tempt = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
-                matrix[j][i] = temp;
-            }
-            k++;
-        }
+                matrix[j][i] = tempt;
 
-        for (int i = 0; i < cols ; i++){
-            for (int j = 0; j < row/2; j++){
-                int temp = matrix[i][j];
-                int sw = row - j - 1;
-                matrix[i][j] = matrix[i][sw];
-                matrix[i][sw] = temp;
             }
         }
 
-        
+        // Step 2: Reverse each row
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n/2; j++){
+                // swap elements to reverse the order of the row
+                int tempt = matrix[i][j];
+                matrix[i][j] = matrix [i][n - j -1];
+                matrix [i][n - j -1] = tempt;
+
+            }
+        }
+
     }
 }
