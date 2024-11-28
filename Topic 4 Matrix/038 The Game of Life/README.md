@@ -113,46 +113,49 @@ To solve this problem in-place:
 ```java
 public class Solution {
     public void gameOfLife(int[][] board) {
-        int m = board.length, n = board[0].length;
+        int m = board.length;
+        int n = board[0].length;
 
         // Directions for the 8 neighbors
-        int[][] directions = {
+        int[][] direction = {
             {-1, -1}, {-1, 0}, {-1, 1},
-            {0, -1},          {0, 1},
-            {1, -1}, {1, 0},  {1, 1}
+            {0, -1}, {0, 1},
+            {1, -1}, {1, 0}, {1, 1}
         };
 
+        // Loop through each cell on the board
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                int liveNeighbors = 0;
+                int liveCellNeighbors = 0;
 
-                // Count live neighbors
-                for (int[] dir : directions) {
-                    int r = i + dir[0], c = j + dir[1];
-                    if (r >= 0 && r < m && c >= 0 && c < n && Math.abs(board[r][c]) == 1) {
-                        liveNeighbors++;
+                for (int[] dir : direction) {
+                    int r = i + dir[0];
+                    int c = j + dir[1];
+
+                    if (r >= 0 && c >= 0 && r < m && c < n && Math.abs(board[r][c]) == 1) {
+                        liveCellNeighbors++;
                     }
                 }
 
                 // Apply the rules
-                if (board[i][j] == 1 && (liveNeighbors < 2 || liveNeighbors > 3)) {
-                    board[i][j] = 2; // Alive to Dead
+                if (board[i][j] == 1 && (liveCellNeighbors < 2 || liveCellNeighbors > 3)) {
+                    board[i][j] = -1;
                 }
-                if (board[i][j] == 0 && liveNeighbors == 3) {
-                    board[i][j] = 3; // Dead to Alive
+                if (board[i][j] == 0 && liveCellNeighbors == 3) {
+                    board[i][j] = 2;
                 }
             }
         }
 
-        // Finalize the board
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (board[i][j] == 2) board[i][j] = 0;  // Alive -> Dead
-                if (board[i][j] == 3) board[i][j] = 1; // Dead -> Alive
+                if (board[i][j] == -1) board[i][j] = 0;
+                if (board[i][j] == 2) board[i][j] = 1;
             }
         }
     }
 }
+
 ```
 
 ---
