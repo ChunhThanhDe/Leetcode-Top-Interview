@@ -1,42 +1,180 @@
-# 🎮 The Game of Life 🖼️
+## 289. Game of Life 🖼️
 
-According to Wikipedia's article: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970."
+**Difficulty**: `Medium` - **Tags**: `Array`, `Matrix`, `Simulation`
 
-## 🔍 Game Rules
+[LeetCode Problem Link](https://leetcode.com/problems/game-of-life/)
 
-The board is made up of an `m x n` grid of cells, where each cell has an initial state: live (represented by a `1`) or dead (represented by a `0`). Each cell interacts with its eight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):
+---
 
-1. 💀 Any live cell with fewer than two live neighbors dies as if caused by under-population.
-2. 🌱 Any live cell with two or three live neighbors lives on to the next generation.
-3. 🔥 Any live cell with more than three live neighbors dies, as if by over-population.
-4. 🌳 Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+### Problem Description 📜
 
-The next state is created by applying the above rules simultaneously to every cell in the current state, where births and deaths occur simultaneously.
+According to Wikipedia's article: **"The Game of Life"**, also known simply as **Life**, is a cellular automaton devised by the British mathematician **John Horton Conway** in 1970.
 
-## 🔢 Examples
+The board is made up of an `m x n` grid of cells, where each cell has an initial state: **live** (represented by `1`) or **dead** (represented by `0`).
 
-### Example 1:
+Each cell interacts with its eight neighbors (horizontal, vertical, and diagonal) according to the following rules:
+
+---
+
+### Game Rules 🔍
+
+1. **💀 Under-population**:
+   Any live cell with fewer than **two** live neighbors dies.
+
+2. **🌱 Survival**:
+   Any live cell with **two or three** live neighbors lives on to the next generation.
+
+3. **🔥 Over-population**:
+   Any live cell with more than **three** live neighbors dies.
+
+4. **🌳 Reproduction**:
+   Any dead cell with exactly **three** live neighbors becomes a live cell.
+
+---
+
+### Examples 🌟
+
+🔹 **Example 1:**
 
 ![](grid1.jpg)
 
-**Input:** `board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]`
-**Output:** `[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]`
+**Input:**
+```java
+int[][] board = {
+    {0, 1, 0},
+    {0, 0, 1},
+    {1, 1, 1},
+    {0, 0, 0}
+};
+```
 
-### Example 2:
+**Output:**
+```
+[[0, 0, 0],
+ [1, 0, 1],
+ [0, 1, 1],
+ [0, 1, 0]]
+```
+
+🔹 **Example 2:**
 
 ![](grid2.jpg)
 
-**Input:** `board = [[1,1],[1,0]]`
-**Output:** `[[1,1],[1,1]]`
+**Input:**
+```java
+int[][] board = {
+    {1, 1},
+    {1, 0}
+};
+```
 
-## 📝 Constraints
+**Output:**
+```
+[[1, 1],
+ [1, 1]]
+```
+
+---
+
+### Constraints ⚙️
 
 - `m == board.length`
 - `n == board[i].length`
 - `1 <= m, n <= 25`
 - `board[i][j]` is `0` or `1`.
 
-## 🤔 Follow-up
+---
 
-1. Could you solve it in-place? Remember that the board needs to be updated simultaneously: You cannot update some cells first and then use their updated values to update other cells.
-2. In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches upon the border of the array (i.e., live cells reach the border). How would you address these problems?
+### Follow-up 🤔
+
+1. **In-Place Solution**:
+   Can you solve the problem **in-place**?
+   Remember that the board must be updated simultaneously, meaning you can't use updated values to affect other cells in the same iteration.
+
+2. **Infinite Grid**:
+   The board is technically **infinite**. How would you handle cases where live cells reach the border of the array?
+
+---
+
+### Solution 💡
+
+To solve this problem in-place:
+
+- Use intermediate states to represent transitions:
+  - `2`: Represents a cell that was alive but will become dead.
+  - `-1`: Represents a cell that was dead but will become alive.
+- Traverse the board, calculate the next state of each cell based on its neighbors, and update it using the intermediate states.
+- Finally, convert the intermediate states to their final values.
+
+---
+
+#### Java Solution
+
+```java
+public class Solution {
+    public void gameOfLife(int[][] board) {
+        int m = board.length, n = board[0].length;
+
+        // Directions for the 8 neighbors
+        int[][] directions = {
+            {-1, -1}, {-1, 0}, {-1, 1},
+            {0, -1},          {0, 1},
+            {1, -1}, {1, 0},  {1, 1}
+        };
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                int liveNeighbors = 0;
+
+                // Count live neighbors
+                for (int[] dir : directions) {
+                    int r = i + dir[0], c = j + dir[1];
+                    if (r >= 0 && r < m && c >= 0 && c < n && Math.abs(board[r][c]) == 1) {
+                        liveNeighbors++;
+                    }
+                }
+
+                // Apply the rules
+                if (board[i][j] == 1 && (liveNeighbors < 2 || liveNeighbors > 3)) {
+                    board[i][j] = 2; // Alive to Dead
+                }
+                if (board[i][j] == 0 && liveNeighbors == 3) {
+                    board[i][j] = 3; // Dead to Alive
+                }
+            }
+        }
+
+        // Finalize the board
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == 2) board[i][j] = 0;  // Alive -> Dead
+                if (board[i][j] == 3) board[i][j] = 1; // Dead -> Alive
+            }
+        }
+    }
+}
+```
+
+---
+
+### Explanation of the Solution
+
+1. **Use Intermediate States**:
+   - Transition states (`2` for alive to dead, `-1` for dead to alive) help avoid overwriting neighbor data prematurely.
+
+2. **Final Pass**:
+   - Replace intermediate states with the final state after completing the first pass.
+
+---
+
+### Time Complexity ⏳
+
+- **O(m * n)**:
+  Each cell is visited once to calculate its next state.
+
+### Space Complexity 💾
+
+- **O(1)**:
+  The board is updated in-place without additional space.
+
+You can find the full solution [here](Solution.java).
