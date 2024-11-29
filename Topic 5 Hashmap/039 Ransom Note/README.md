@@ -128,3 +128,6 @@ class Solution1 {
 - **O(k)**:
   - `k` is the number of unique characters in `magazine`.
   - Space used by the `HashMap`.
+
+
+You can find the full solution [here](Solution.java).
