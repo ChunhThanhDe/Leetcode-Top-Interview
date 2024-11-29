@@ -1,25 +1,45 @@
-class Solution {
-    public boolean isIsomorphic(String s, String t) {
-        char[] sChars = s.toCharArray();
-        char[] tChars = t.toCharArray();
+// input: two String s and t
+// output: true if s can be replaced to get t, false otherwise
+// note:
+//  - Each character in s can be mapped to a unique character in t with the same order.
 
-        Map<Character, Character> charSCountMap = new HashMap<>();
-        Map<Character, Character> charTCountMap = new HashMap<>();
+import java.util.HashMap;
+import java.util.Map;
 
-        if (sChars.length == 0 || tChars.length != sChars.length) return false;
+public class Solution{
+    public boolean isIsomorphic(String s, String t){
+        // check length of both
+        // if not the same, they cannot be isomorphic
+        if(s.length() != t.length()) return false;
 
-        for (int i = 0; i < sChars.length; i++) {
-            char c = sChars[i];
-            char d = tChars[i];
-            if ((!charSCountMap.containsKey(c) && !charTCountMap.containsKey(d)) ||
-                (charSCountMap.containsKey(c) && charSCountMap.get(c) == d && 
-                 charTCountMap.containsKey(d) && charTCountMap.get(d) == c)) {
-                charSCountMap.put(c, d);
-                charTCountMap.put(d, c);
+        // Map to store the character mapping from s to t and t to s
+        Map<Character, Character> sToMapping = new HashMap<>();
+        Map<Character, Character> tToMapping = new HashMap<>();
+
+        // iterate over each character in both string
+        for (int i = 0; i < s.length(); i ++){
+            char sChar = s.charAt(i);
+            char tChar = t.charAt(i);
+
+            // check if there is already a mapping from sChar to tChar
+            if (sToMapping.containsKey(sChar)){
+                if (sToMapping.get(sChar) != tChar) return false; // if exits mapping but doesn't match. return false
             } else {
-                return false;
+                // if no mapping, create new
+                sToMapping.put(sChar, tChar);
+            }
+
+            // check if there is already a mapping from tchar to sChar
+            if (tToMapping.containsKey(tChar)){
+                if (tToMapping.get(tChar) != sChar) return false; // if exits mapping but doesn't match. return false
+            } else {
+                // if no mapping, create new
+                tToMapping.put(tChar, sChar);
             }
         }
+
+        // return true if all character mapping valid
         return true;
+
     }
 }
