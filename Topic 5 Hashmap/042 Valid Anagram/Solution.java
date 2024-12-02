@@ -1,28 +1,37 @@
-class Solution {
-    public boolean isAnagram(String s, String t) {
-        char[] sChars = s.toCharArray();
-        char[] tChars = t.toCharArray();
+//input: two String s and t
+//output: boolean, true if t is re-generate of s
 
-        if (sChars.length != tChars.length) return false;
+import java.util.HashMap;
+import java.util.Map;
 
-        Map<Character, Integer> charCountMap = new HashMap<>();
+public class Solution{
+    public boolean isAnagram (String s, String t){
 
-        for (char c : s.toCharArray()) {
-            if (charCountMap.containsKey(c)) {
-                charCountMap.put(c, charCountMap.get(c) + 1);
-            } else {
-                charCountMap.put(c, 1);
-            }
+        // check if the length of t not equal of s, return false
+        if (s.length() != t.length()) return false;
+
+        // Create a Hashmap to store the count of each character in s
+        Map<Character, Integer> charCount = new HashMap<>();
+
+        // iterate over each char of s
+        for (char c: s.toCharArray()){
+             // increment the count of the character in the map
+            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+
         }
 
-        for (char c : t.toCharArray()) {
-            if (charCountMap.containsKey(c) && charCountMap.get(c) > 0) {
-                charCountMap.put(c, charCountMap.get(c) - 1);
+        // iterate over each char of t
+        for (char c : t.toCharArray()){
+            if (charCount.containsKey(c) && charCount.get(c) > 0){
+                // decrease the count of the character in the map
+                charCount.put(c, charCount.get(c) - 1);
             } else {
+                // return false if character not exit of not enough value
                 return false;
             }
         }
 
+        // return true if all check pass
         return true;
     }
 }
