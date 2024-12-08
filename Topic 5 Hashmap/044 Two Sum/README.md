@@ -1,4 +1,4 @@
-## Two Sum 🔍
+## 1. Two Sum 🔍
 
 **Difficulty**: `Easy` - **Tags**: `Array`, `Hash Table`
 
