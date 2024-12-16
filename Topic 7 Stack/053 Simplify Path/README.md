@@ -1,62 +1,194 @@
-# Simplify Path 🗺️
+## 71. Simplify Path 🗺️
 
-## Problem Description 📝
+**Difficulty**: `Medium` - **Tags**: `Stack`, `String`
 
-Given an absolute path for a Unix-style file system, which begins with a slash '/', transform this path into its simplified canonical path.
+[LeetCode Problem Link](https://leetcode.com/problems/simplify-path/)
 
-In Unix-style file system context, a single period '.' signifies the current directory, a double period ".." denotes moving up one directory level, and multiple slashes such as "//" are interpreted as a single slash. In this problem, treat sequences of periods not covered by the previous rules (like "...") as valid names for files or directories.
+---
 
-The simplified canonical path should adhere to the following rules:
+### Problem Statement 📜
 
-- It must start with a single slash '/'.
-- Directories within the path should be separated by only one slash '/'.
-- It should not end with a slash '/', unless it's the root directory.
-- It should exclude any single or double periods used to denote current or parent directories.
+Given an absolute path for a Unix-style file system, which begins with a slash `'/'`, transform this path into its simplified canonical path.
 
-## Examples 🔍
+In Unix-style file systems:
 
-**Example 1:**
+- A single period `'.'` signifies the current directory.
+- A double period `'..'` denotes moving up one directory level.
+- Multiple slashes `'//'` are interpreted as a single slash `'/'`.
 
-```
-Input: path = "/home/"
-Output: "/home"
-Explanation: The trailing slash should be removed.
-```
+The simplified canonical path should:
 
-**Example 2:**
+1. Start with a single slash `'/'`.
+2. Separate directories with a single slash `'/'`.
+3. Not end with a slash `'/'` (unless it is the root directory).
+4. Exclude any single or double periods.
 
-```
-Input: path = "/home//foo/"
-Output: "/home/foo"
-Explanation: Multiple consecutive slashes are replaced by a single one.
-```
+---
 
-**Example 3:**
+### Examples 🌟
 
-```
-Input: path = "/home/user/Documents/../Pictures"
-Output: "/home/user/Pictures"
-Explanation: A double period ".." refers to the directory up a level.
+🔹 **Example 1:**
+
+**Input:**
+
+```plaintext
+path = "/home/"
 ```
 
-**Example 4:**
+**Output:**
 
-```
-Input: path = "/../"
-Output: "/"
-Explanation: Going one level up from the root directory is not possible.
+```plaintext
+"/home"
 ```
 
-**Example 5:**
+---
 
-```
-Input: path = "/.../a/../b/c/../d/./"
-Output: "/.../b/d"
-Explanation: "..." is a valid name for a directory in this problem.
+🔹 **Example 2:**
+
+**Input:**
+
+```plaintext
+path = "/home//foo/"
 ```
 
-## Constraints 🔧
+**Output:**
+
+```plaintext
+"/home/foo"
+```
+
+---
+
+🔹 **Example 3:**
+
+**Input:**
+
+```plaintext
+path = "/home/user/Documents/../Pictures"
+```
+
+**Output:**
+
+```plaintext
+"/home/user/Pictures"
+```
+
+---
+
+🔹 **Example 4:**
+
+**Input:**
+
+```plaintext
+path = "/../"
+```
+
+**Output:**
+
+```plaintext
+"/"
+```
+
+---
+
+🔹 **Example 5:**
+
+**Input:**
+
+```plaintext
+path = "/.../a/../b/c/../d/./"
+```
+
+**Output:**
+
+```plaintext
+"/.../b/d"
+```
+
+---
+
+### Constraints ⚙️
 
 - `1 <= path.length <= 3000`
-- `path` consists of English letters, digits, period `.`, slash `/` or `_`.
+- `path` consists of English letters, digits, period `'.'`, slash `'/'`, or underscore `'_'`.
 - `path` is a valid absolute Unix path.
+
+---
+
+### Solution 💡
+
+To solve the problem, a **stack** can be used to process directory names:
+
+1. Split the path by `'/'` to handle each component.
+2. Ignore empty strings, `'.'`, and handle `'..'` by popping the stack (if not empty).
+3. Push valid directory names onto the stack.
+4. Construct the canonical path by joining stack elements with `'/'`.
+
+---
+
+#### Java Solution
+
+```java
+import java.util.Stack;
+
+class Solution {
+    public String simplifyPath(String path) {
+        Stack<String> stack = new Stack<>();
+        String[] components = path.split("/");
+
+        // Step 1: Process each component
+        for (String component : components) {
+            if (component.isEmpty() || component.equals(".")) {
+                // Ignore empty or current directory components
+                continue;
+            } else if (component.equals("..")) {
+                // Move up one directory level
+                if (!stack.isEmpty()) {
+                    stack.pop();
+                }
+            } else {
+                // Push valid directory names
+                stack.push(component);
+            }
+        }
+
+        // Step 2: Construct the simplified path
+        StringBuilder result = new StringBuilder();
+        for (String dir : stack) {
+            result.append("/").append(dir);
+        }
+
+        return result.length() > 0 ? result.toString() : "/";
+    }
+}
+```
+
+---
+
+### Explanation of the Solution
+
+1. **Splitting the Path**:
+
+   - Split the path into components by `'/'` to isolate directories, `'.'`, and `'..'`.
+
+2. **Using a Stack**:
+
+   - Push valid directory names onto the stack.
+   - Pop the stack for `'..'` to move up a directory level.
+   - Ignore `'.'` and empty components.
+
+3. **Constructing the Canonical Path**:
+   - Join stack elements with `'/'` to create the simplified path.
+   - If the stack is empty, return `'/'` as the root directory.
+
+---
+
+### Time Complexity ⏳
+
+- **O(n)**: Where `n` is the length of the input `path`. Each component is processed once.
+
+### Space Complexity 💾
+
+- **O(n)**: In the worst case, the stack contains all components of the path.
+
+You can find the full solution [here](Solution.java).

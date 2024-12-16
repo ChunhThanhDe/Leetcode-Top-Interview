@@ -1,31 +1,58 @@
-public class Solution {
-    public String simplifyPath(String path) {
-        // Split the input path by "/"
-        String[] arr = path.split("/");
-        // Use a stack to store the components of the path
-        Stack<String> st = new Stack<>();
+// input: a Unix-style file system (String path)
+// output: the  simplified canonical path.
 
-        // Iterate through each component of the array
-        for (String str : arr) {
-            // If the component is "..", pop the stack if it is not empty
-            if (str.equals("..")) {
-                if (!st.isEmpty()) st.pop();
-            // If the component is not "." and not empty, push it onto the stack
-            } else if (!str.equals(".") && !str.isEmpty()) {
-                st.push(str);
+import java.util.Stack;
+
+public class Solution {
+    public String simplifyPath(String path){
+        //Stack to hold the directories as we process the path.
+        Stack<String> stack = new Stack<>();
+
+        //Split the input path
+        String[] components = path.split("/");
+
+        // Step 1: Process each components in th split path
+        for (String c : components){
+            // ignore empty components and "." (current directory)'
+            if (c.isEmpty() || c.equals(".")) {
+                continue;
+            } else if (c.equals("..")){
+                if (!stack.isEmpty()) {
+                    stack.pop(); // Move up one level by popping from stack.
+                }
+            } else {
+                // Otherwise, push the valid directory name onto the stack
+                stack.push(c);
             }
         }
 
-        // Initialize the result string
-        String res = "";
-        // If the stack is empty, return "/"
-        if (st.isEmpty()) return "/";
+        // Step 2: Build the simplified canonical path
+        StringBuilder result = new StringBuilder();
 
-        // Construct the valid path from the components in the stack
-        while (!st.isEmpty()) {
-            res = "/" + st.pop() + res;
+        // Iterate through the stack and create path
+        for (String s : stack){
+            result.append("/").append(s);
         }
 
-        return res;
+        // Return the result, or "/" if stack is empty (root patch)
+        return result.length() > 0 ? result.toString() : "/";
     }
+
+    // Testcase
+    public static void main(String[] args){
+        Solution solution = new Solution();
+
+        String path1 = "/home/";
+        String path2 = "/home//foo/";
+        String path3 = "/home/user/Documents/../Pictures";
+        String path4 = "/../";
+        String path5 = "/.../a/../b/c/../d/./";
+
+        System.out.println("Test: " + solution.simplifyPath(path1));
+        System.out.println("Test: " + solution.simplifyPath(path2));
+        System.out.println("Test: " + solution.simplifyPath(path3));
+        System.out.println("Test: " + solution.simplifyPath(path4));
+        System.out.println("Test: " + solution.simplifyPath(path5));
+    }
+
 }
