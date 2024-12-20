@@ -1,27 +1,66 @@
+import java.util.Stack;
+
 class MinStack {
-    int min = Integer.MAX_VALUE;
-    Stack<Integer> stack = new Stack<Integer>();
-    public void push(int x) {
-        // only push the old minimum value when the current 
-        // minimum value changes after pushing the new value x
-        if(x <= min){          
-            stack.push(min);
-            min=x;
+
+    // main stack to store all elements
+    private Stack<Integer> stack;
+    // auxiliary stack to store the minumum element at each state
+    private Stack<Integer> minStack;
+
+    // Constructor: initlizes the stack and minStack
+    public MinStack(){
+        stack = new Stack<>();
+        minStack = new Stack<>();
+    }
+
+    // Push element val onto the stack
+    public void push (int val){
+        stack.push(val); // add value to main stack
+
+        // Check current minStack and val
+        if (minStack.isEmpty() || val < minStack.peek()){
+            minStack.push(val);
+        } else {
+            minStack.push(minStack.peek()); // Repeat the current minimum
         }
-        stack.push(x);
     }
 
-    public void pop() {
-        // if pop operation could result in the changing of the current minimum value, 
-        // pop twice and change the current minimum value to the last minimum value.
-        if(stack.pop() == min) min=stack.pop();
+    // Remove the top element of the stack
+    public void pop (){
+        stack.pop(); // Remove top from the main stack
+        minStack.pop();  // Remove top from the minStack
     }
 
-    public int top() {
-        return stack.peek();
+    // Retrieve the top element of the stack.
+    public int top(){
+        return stack.peek(); // Return the top of the main stack
     }
 
-    public int getMin() {
-        return min;
+    // Retrieve the minimum element in the stack.
+    public int getMin(){
+        return minStack.peek(); // Return the top of the minStack
+    }
+
+    public static void main(String[] args) {
+        // Create a new MinStack object
+        MinStack minStack = new MinStack();
+
+        // Test case 1: Push elements and check minimum
+        System.out.println("Test case 1:");
+        minStack.push(-2);
+        minStack.push(0);
+        minStack.push(-3);
+        System.out.println("getMin(): " + minStack.getMin()); // Expected: -3
+        minStack.pop();
+        System.out.println("top(): " + minStack.top());       // Expected: 0
+        System.out.println("getMin(): " + minStack.getMin()); // Expected: -2
+
+        // Test case 2: Push additional elements
+        System.out.println("\nTest case 2:");
+        minStack.push(5);
+        minStack.push(-1);
+        System.out.println("getMin(): " + minStack.getMin()); // Expected: -2
+        minStack.pop();
+        System.out.println("getMin(): " + minStack.getMin()); // Expected: -2
     }
 }
