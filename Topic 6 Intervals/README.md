@@ -1,4 +1,4 @@
-# Intervals Study Guide
+# Topic 6 Intervals
 
 ## 🛠 Overview
 
