@@ -1,18 +1,41 @@
-class Solution {
-    public int evalRPN(String[] tokens) {
-        Stack<Integer> nums = new Stack<>();
-        for (String token: tokens) {
-            if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/")) {
-                int b = nums.pop();
-                int a = nums.pop();
-                if (token.equals("+")) { nums.push(a + b); }
-                if (token.equals("-")) { nums.push(a - b); }
-                if (token.equals("*")) { nums.push(a * b); }
-                if (token.equals("/")) { nums.push(a / b); }
+// input: String[] tokens number and Valid operators
+// output: int, result of RPN math calculations
+import java.util.*;
+
+public class Solution{
+    public int evalRPN (String[] tokens){
+
+        Stack<Integer> stack = new Stack<>();
+
+        for (String token : tokens){
+            if (isValidOperators(token)){
+                int b = stack.pop();
+                int a = stack.pop();
+                stack.push(mathOperation(a, b, token));
             } else {
-                nums.push(Integer.valueOf(token));
+                stack.push(Integer.parseInt(token));
             }
         }
-        return nums.isEmpty() ? 0 : nums.pop();
+
+        return stack.pop();
+    }
+
+    private boolean isValidOperators(String token){
+        return token.equals("*") || token.equals("+") || token.equals("-") || token.equals("/");
+    }
+
+    private int mathOperation(int a, int b, String token){
+        switch (token){
+            case "+":
+                return a + b;
+            case "-":
+                return a - b;
+            case "*":
+                return a * b;
+            case "/":
+                return a / b;
+            default:
+                throw new IllegalArgumentException("not valid Operation");
+        }
     }
 }
