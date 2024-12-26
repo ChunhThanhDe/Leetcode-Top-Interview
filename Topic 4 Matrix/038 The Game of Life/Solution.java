@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-11-28 08:21:45
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 public class Solution {
     // input: mxn grid board
     // output: board updated to the next state

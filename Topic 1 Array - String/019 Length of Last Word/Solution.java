@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     // Function to find the length of the last word in the given String
     public int lengthOfLastWord(String s){
@@ -13,7 +19,7 @@ class Solution {
             if (trimmedString.charAt(i) == ' '){
                 // if we encounter a space
                 // it mean we are finished counting the last word
-                break; 
+                break;
             }
 
             // if it is not a space, increment the length counter

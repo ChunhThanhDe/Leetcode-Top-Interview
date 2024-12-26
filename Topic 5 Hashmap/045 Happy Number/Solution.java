@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-07-12 10:02:02
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: an integer
 // output: boolean, true if n is happy number
 

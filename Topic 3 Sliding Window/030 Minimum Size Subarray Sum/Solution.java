@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:38:59
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: an array of positive integers 'nums' and a positive integer 'target'
 // output: minimal length of a subarray with sum >= 'target', or 0 if none exists
 

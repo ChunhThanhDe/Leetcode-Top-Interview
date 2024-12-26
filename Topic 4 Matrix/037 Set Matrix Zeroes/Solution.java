@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-06-07 16:36:54
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: an m x n integer matrix matrix
 // output: if an element is 0, set its entire row and column to 0's.
 

@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-08-05 08:25:30
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: a Unix-style file system (String path)
 // output: the  simplified canonical path.
 

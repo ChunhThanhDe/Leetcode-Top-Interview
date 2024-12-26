@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     public int jump(int[] nums) {
         int n = nums.length;
@@ -6,7 +12,7 @@ class Solution {
         int maxReach = 0; // the farthest point of jumps that can be reached overall
 
         // loop through the array but stop at the second-the-last element
-        // since we donn't need to jump from the last element 
+        // since we donn't need to jump from the last element
         for (int i = 0; i < n - 1; i++) {
 
             // update the maxReach to be farthest point that can be reached from index i

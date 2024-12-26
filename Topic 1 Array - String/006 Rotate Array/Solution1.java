@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-09-16 09:37:48
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     public void rotate(int[] nums, int k) {
 
@@ -23,10 +29,10 @@ class Solution {
 
     }
 
-    // Function to reverse element in the array nums beetween 'start' and 'end' indexs 
+    // Function to reverse element in the array nums beetween 'start' and 'end' indexs
     private void reverse (int[] nums, int start, int end){
         while (start < end){
-            // swap element at 'start' and 'end' position 
+            // swap element at 'start' and 'end' position
             int temp = nums[end];
             nums[end] = nums[start];
             nums[start] = temp;

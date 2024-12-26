@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-08-06 09:57:38
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: String[] tokens number and Valid operators
 // output: int, result of RPN math calculations
 import java.util.*;

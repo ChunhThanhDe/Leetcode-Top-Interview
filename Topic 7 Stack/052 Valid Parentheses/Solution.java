@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-08-01 08:11:19
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: A String `s` containing brackets '(', ')', '{', '}', '[', and ']'
 // output: boolean indicating if the string has valid bracket pairs
 

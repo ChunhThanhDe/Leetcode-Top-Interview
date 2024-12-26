@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-06-12 17:19:26
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: two String s and t
 // output: true if s can be replaced to get t, false otherwise
 // note:

@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-12-11 07:54:43
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: unsorted array integer `nums`
 // output: integer of longest consecutive elements sequence
 

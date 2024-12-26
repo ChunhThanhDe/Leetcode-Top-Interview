@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-12-23 10:34:08
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: String s, a valid expression
 // output: int, calculator th result of the evaluation
 // note: s consists of digits, '+', '-', '(', ')', and spaces ' '

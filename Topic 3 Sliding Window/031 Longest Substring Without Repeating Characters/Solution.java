@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-28 16:48:19
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: a string 's'
 // output: length of the longest substring without repeating characters
 

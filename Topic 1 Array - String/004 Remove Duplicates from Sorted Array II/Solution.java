@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 public class Solution {
     public int removeDuplicates(int[] nums) {
 
@@ -25,5 +31,5 @@ public class Solution {
         // return 'k' which represents the new length of the array with duplicates removed rule
         return k;
     }
-    
+
 }

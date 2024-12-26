@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -9,7 +15,7 @@ public class Solution {
     // method to fully justify the given words to fit a specified maxwidth
     public List<String> fullJustify(String[] words, int maxwidth){
         int n = words.length;
-        int i = 0; // index to track position 
+        int i = 0; // index to track position
 
         List<String> result = new ArrayList<>();
 

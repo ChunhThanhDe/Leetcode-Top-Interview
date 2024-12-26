@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-07-25 16:58:19
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input:  a sorted unique integer array nums.
 // output: a list of String that representing ranges in the array
 

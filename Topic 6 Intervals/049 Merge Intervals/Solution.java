@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-12-13 08:17:46
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: 2D array of intervals
 // output: 2D array of merge non-overlapping intervals
 

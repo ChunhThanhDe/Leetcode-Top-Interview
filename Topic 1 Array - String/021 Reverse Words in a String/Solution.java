@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     // function to reverse the words in a given string
     public String reverseWords(String s){
@@ -23,6 +29,6 @@ class Solution {
 
         // return the final reversed string as a regular String.
         return reversedString.toString();
-         
+
     }
 }

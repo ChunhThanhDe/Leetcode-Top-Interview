@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution{
     public String longestCommonPrefix(String[] strs){
         // Check if the input array is empty; if so, return an empty string.
@@ -9,7 +15,7 @@ class Solution{
         String prefix = strs[0];
 
         // loop through the remaining strings in the array
-        // start from second string 
+        // start from second string
         for (int i = 1; i < strs.length; i++){
             // while the current string does not start with the prefix
             // we need to shorten the prefix

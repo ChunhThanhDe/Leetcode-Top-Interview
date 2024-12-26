@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-12-16 08:02:49
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: 2D array of point representing balloon ranges
 // output: Integer, minimum of arrows required to burst all balloons.
 

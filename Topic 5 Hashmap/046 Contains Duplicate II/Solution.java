@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-07-22 08:04:11
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: an array `nums` and an integer `k`
 // output: boolean, true if indies `i`, `j`
 // nums[i] == nums[j]

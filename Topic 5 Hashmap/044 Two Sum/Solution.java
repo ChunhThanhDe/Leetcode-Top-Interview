@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-07-10 11:32:27
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: array of integer `nums` and an Integer `target`
 // output: array of two numbers such that they add up to `target`.
 

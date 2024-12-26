@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-11-19 09:08:34
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // Input: String `s` and array `words` (all words have the same length)
 // Output: List of starting indices of all concatenated substrings in `s`
 //         if s == null or s.length() == 0 -> return []

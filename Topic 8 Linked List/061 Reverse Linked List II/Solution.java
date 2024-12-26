@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-12-26 09:24:07
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // Definition fod singly linked list
 class ListNode {
     int val;

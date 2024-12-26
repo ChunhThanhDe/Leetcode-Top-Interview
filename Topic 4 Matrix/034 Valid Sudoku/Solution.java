@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-06-03 17:33:18
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: a 9 x 9 Sudoku broad as a 2D character array (char[][])
 // output: return the true if the broad is valid. false otherwise
 // key points: Validate rows, columns, and 3x3 sub-boxed for duplicates.

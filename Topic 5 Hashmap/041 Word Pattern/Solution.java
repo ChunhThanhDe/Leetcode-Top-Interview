@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-06-13 11:17:24
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: a pattern and a string s
 // output: boolean if full match of s follows the same pattern
 

@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 public class Solution {
     public boolean isPalindrome(String s) {
         // step 1: filter out non-alphanumeric character and convert to lowercase for

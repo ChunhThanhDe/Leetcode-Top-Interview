@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     // function to convert a given string to zigzag pattern with numRows and return it as a Single String.
     public String convert(String s, int numRows){
@@ -18,7 +24,7 @@ class Solution {
         // variable to control the direction of traversal, initially moving down (1)
         int directionNext = 1; // 1 means moving down. -1 means moving up
 
-        // loop through each character in the input string 
+        // loop through each character in the input string
         for (char c : s.toCharArray()){
             // add the current character to the current row
             rows[rowIndex] += c;
@@ -26,15 +32,15 @@ class Solution {
             // if we reach the top now, we change direction to move down
             if (rowIndex == 0){
                 directionNext = 1;
-            } 
+            }
             // if we each the bottom row, we change direction to move up
             else if (rowIndex == numRows - 1){
                 directionNext = -1;
             }
 
-            // move to the next row 
+            // move to the next row
             rowIndex += directionNext;
-        
+
         }
 
         // Create String builder to combine all row into the final String result

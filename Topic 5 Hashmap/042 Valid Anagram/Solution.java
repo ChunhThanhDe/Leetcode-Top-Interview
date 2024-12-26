@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-06-21 11:21:40
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 //input: two String s and t
 //output: boolean, true if t is re-generate of s
 

@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n){
         int i = m - 1; // index of the last element in the sorted of nums1
@@ -10,7 +16,7 @@ class Solution {
             if (i >= 0 && nums1[i] > nums2[j]){
                 nums1[k--] = nums1[i--]; // place nums1's element at position k
             } else {
-                nums1[k--] = nums2[j--] // Otherwise, place nums2's element at position k
+                nums1[k--] = nums2[j--]; // Otherwise, place nums2's element at position k
             }
         }
     }

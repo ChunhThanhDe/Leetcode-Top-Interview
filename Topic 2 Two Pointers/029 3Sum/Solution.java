@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: an integer array
 // output: list of all unique triplets [num[i], num[j], num[k]] such that num[i] + num[j]+ num[k] == 0
 

@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-12-25 09:07:18
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 import java.util.HashMap;
 
 class Node{

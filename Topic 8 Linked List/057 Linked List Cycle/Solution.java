@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-08-07 13:46:13
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // Definition for singly-linked list
 class ListNode {
     int val; // value of the current node

@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-09-18 09:55:09
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 import java.util.Arrays;
 
 class Solution {
@@ -10,7 +16,7 @@ class Solution {
         // - For objects (e.g., Integer[], String[]), Arrays.sort() uses TimSort,
         //      - Time Complexity: O(n log n) is all case
         Arrays.sort(citations);
-        
+
         int n = citations.length;
 
         // Iterate through the sorted citations array

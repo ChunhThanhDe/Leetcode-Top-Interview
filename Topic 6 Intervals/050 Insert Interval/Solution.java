@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-07-26 09:46:18
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // Input: 2D array of non-overlapping intervals and a single `newInterval` to insert
 // output: Update 2D array of intervals with new interval inserted and merged
 

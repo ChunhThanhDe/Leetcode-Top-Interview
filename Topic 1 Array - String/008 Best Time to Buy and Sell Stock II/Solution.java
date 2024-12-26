@@ -1,6 +1,12 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     public int maxProfit(int[] prices) {
-        
+
         // initialize profit = 0
         int profit = 0;
 

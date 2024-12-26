@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-12-25 08:30:48
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class ListNode {
     int val;
     ListNode next;

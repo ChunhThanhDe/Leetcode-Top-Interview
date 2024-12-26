@@ -1,10 +1,16 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-05-24 16:20:41
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 class Solution {
     public int maxProfit(int[] prices) {
 
         // initialize minPrice to the highest possible value to find the smallest price
         // Because i an unsure whether the array 'prices' alway have at least one element.
         // This is useful to avoid causing an ArrayIndexOutOfBoundsException if the array is empty.
-        int minPrice = Integer.MAX_VALUE;
+        // int minPrice = Integer.MAX_VALUE;
 
         // second way:
         //          // Ensure the array is not empty
@@ -28,12 +34,12 @@ class Solution {
                 minPrice = price;
             } else {
                 // if the current price is higher than minPrice, calculate the profit
-                // Calculate the profit when if selling at the current price after buying at the minPrice 
+                // Calculate the profit when if selling at the current price after buying at the minPrice
                 // Then, update maxProfit if the current profit is greater than previous maxProfit
                 maxProfit = Math.max(maxProfit, price - minPrice);
             }
-        } 
-        
+        }
+
         return maxProfit;
     }
 }

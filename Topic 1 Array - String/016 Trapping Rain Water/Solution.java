@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-09-24 09:28:30
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 public class Solution {
 
     public int trap(int[] height) {

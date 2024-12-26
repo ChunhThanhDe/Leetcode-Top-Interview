@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2024-07-02 16:49:52
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 // input: Array of String strs
 // output list of sublist contains group string rearranging character
 
