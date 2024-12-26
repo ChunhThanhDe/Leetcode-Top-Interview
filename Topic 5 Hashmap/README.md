@@ -83,3 +83,5 @@ A `HashMap` is a part of Java's `java.util` package and is an implementation of 
 1. **Efficiency**: `HashMap` is highly efficient for problems involving fast data lookup and storage.
 2. **Use Cases**: Ideal for frequency counting, caching, and adjacency list representation.
 3. **Caveats**: Requires careful handling of collisions and thread safety.
+
+Happy Coding !!!

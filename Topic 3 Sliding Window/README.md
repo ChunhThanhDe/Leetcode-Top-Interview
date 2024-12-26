@@ -9,6 +9,7 @@ The **Sliding Window** technique is a highly efficient approach in programming, 
 ![Sliding Window](example-2.gif)
 
 The **Sliding Window** technique involves maintaining a "window" that moves across a data structure (usually an array or string). This "window" represents a subset of elements, and it can be:
+
 - **Fixed size**: The window size remains constant throughout.
 - **Dynamic size**: The window size adjusts based on certain conditions.
 
@@ -18,6 +19,7 @@ The **Sliding Window** technique involves maintaining a "window" that moves acro
 <img src="example-3.gif" alt="Sliding Window" width="300">
 
 Instead of recalculating results for every possible subset, the Sliding Window technique avoids redundant computations by:
+
 1. **Adding** the new element entering the window. ➕
 2. **Removing** the old element leaving the window. ➖
 
@@ -44,6 +46,7 @@ Follow these general steps to apply the Sliding Window technique:
 ## 📝 Example 1: Maximum Sum of Subarray of Size `k` 💰
 
 ### Problem
+
 Find the maximum sum of any contiguous subarray of size `k` in an array.
 
 ### Code
@@ -78,6 +81,7 @@ void main() {
 ```
 
 ### Explanation 📝
+
 1. Input: `arr = [2, 3, 5, 2, 9, 7, 1]`, `k = 3`
 2. Sliding Window Steps:
    - `[2, 3, 5]` → sum = 10
@@ -92,6 +96,7 @@ void main() {
 ## 📝 Example 2: Longest Substring Without Repeating Characters 🔑
 
 ### Problem
+
 Find the length of the longest substring without repeating characters in a string.
 
 ### Code
@@ -123,6 +128,7 @@ void main() {
 ```
 
 ### Explanation 📝
+
 1. Input: `s = "abcabcbb"`
 2. Sliding Window Steps:
    - Start: `a` → Length = 1
@@ -153,3 +159,5 @@ void main() {
 ## 🏁 Conclusion
 
 The **Sliding Window** technique is an essential tool for solving many array and string problems. Mastering it can make complex problems much simpler and your solutions more efficient. Keep sliding and coding! 🎯
+
+Happy Coding !!!

@@ -15,6 +15,7 @@ The **Two Pointers** technique uses two pointers or indices to traverse through 
 ### Types of Two Pointers:
 
 1. **Opposite Pointers**:
+
    - One pointer starts at the beginning, and the other starts at the end of the data structure.
    - The pointers move towards each other, often used in problems like finding pairs that sum up to a target value.
 
@@ -29,6 +30,7 @@ The **Two Pointers** technique uses two pointers or indices to traverse through 
 The key advantage of the **Two Pointers** technique is its ability to reduce the time complexity of problems from \(O(n^2)\) to \(O(n)\), which makes it much more efficient for large inputs. By adjusting the pointers dynamically, we avoid redundant calculations and improve performance.
 
 The technique typically works by:
+
 - **Comparing** elements from two ends or at different positions.
 - **Shifting** the pointers to explore the array or string.
 - **Updating** the result based on the current comparison.
@@ -38,6 +40,7 @@ The technique typically works by:
 ## 🛠️ How to Apply Two Pointers?
 
 1. **Opposite Pointers**:
+
    - Place one pointer at the beginning of the array and the other at the end.
    - Move the pointers towards each other while performing comparisons or calculations.
 
@@ -50,6 +53,7 @@ The technique typically works by:
 ## 📝 Example 1: Two Sum (Opposite Pointers) 💡
 
 ### Problem:
+
 Find two numbers in a sorted array that add up to a specific target.
 
 ### Code:
@@ -94,6 +98,7 @@ void main() {
 ## 📝 Example 2: Longest Substring Without Repeating Characters (Same Direction Pointers) 🔑
 
 ### Problem:
+
 Find the length of the longest substring without repeating characters.
 
 ### Code:
@@ -156,3 +161,5 @@ void main() {
 ## 🏁 Conclusion
 
 The **Two Pointers** technique is a highly efficient and versatile approach to solving many algorithmic problems. By using two pointers, you can reduce redundant work and improve performance significantly. Keep practicing and applying this technique to master it! 🎯
+
+Happy Coding !!!

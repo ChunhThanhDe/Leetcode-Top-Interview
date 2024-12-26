@@ -7,6 +7,7 @@ In algorithms, **Matrix** refers to a two-dimensional array, often used to solve
 # Matrix Algorithms in LeetCode 🧩
 
 ## 1. Rotate Matrix
+
 - **Description**: Rotate a square `n x n` matrix by 90 degrees clockwise.
 - **Example**:
   - **Input**:
@@ -27,6 +28,7 @@ In algorithms, **Matrix** refers to a two-dimensional array, often used to solve
     ```
 
 ## 2. Set Matrix Zeroes
+
 - **Description**: If an element in the matrix is 0, set its entire row and column to 0.
 - **Example**:
   - **Input**:
@@ -47,6 +49,7 @@ In algorithms, **Matrix** refers to a two-dimensional array, often used to solve
     ```
 
 ## 3. Game of Life
+
 - **Description**: Apply the Game of Life rules to update the state of the cells in the matrix.
 - **Example**:
   - **Input**:
@@ -69,6 +72,7 @@ In algorithms, **Matrix** refers to a two-dimensional array, often used to solve
     ```
 
 ## 4. Spiral Matrix
+
 - **Description**: Return the elements of a matrix in a spiral order.
 - **Example**:
   - **Input**:
@@ -85,6 +89,7 @@ In algorithms, **Matrix** refers to a two-dimensional array, often used to solve
     ```
 
 ## 5. Diagonal Traverse
+
 - **Description**: Traverse the matrix diagonally.
 - **Example**:
   - **Input**:
@@ -103,24 +108,29 @@ In algorithms, **Matrix** refers to a two-dimensional array, often used to solve
 ## Common Approaches to Solve Matrix Problems 💡
 
 ### 1. **In-place Operations**
-   - **Explanation**: This approach modifies the matrix directly without using extra space. It’s ideal for problems like rotating a matrix or setting entire rows and columns to zero.
-   - **Example**: Rotating a matrix or setting rows and columns to zero.
+
+- **Explanation**: This approach modifies the matrix directly without using extra space. It’s ideal for problems like rotating a matrix or setting entire rows and columns to zero.
+- **Example**: Rotating a matrix or setting rows and columns to zero.
 
 ### 2. **Traversal**
-   - **Explanation**: Matrix problems often require traversing through each element in the matrix, either by row, column, or even diagonally.
-   - **Example**: Traversing the matrix in spiral order or diagonally.
+
+- **Explanation**: Matrix problems often require traversing through each element in the matrix, either by row, column, or even diagonally.
+- **Example**: Traversing the matrix in spiral order or diagonally.
 
 ### 3. **Search Algorithms**
-   - **Explanation**: For problems involving searching for an element or path within a matrix, search algorithms like BFS (Breadth-First Search) or DFS (Depth-First Search) are useful.
-   - **Example**: Searching for the shortest path in a matrix.
+
+- **Explanation**: For problems involving searching for an element or path within a matrix, search algorithms like BFS (Breadth-First Search) or DFS (Depth-First Search) are useful.
+- **Example**: Searching for the shortest path in a matrix.
 
 ### 4. **Dynamic Programming**
-   - **Explanation**: Dynamic programming is useful for optimization problems in matrices, such as finding the longest sequence or the most optimal path.
-   - **Example**: Finding the longest increasing path in a matrix.
+
+- **Explanation**: Dynamic programming is useful for optimization problems in matrices, such as finding the longest sequence or the most optimal path.
+- **Example**: Finding the longest increasing path in a matrix.
 
 ### 5. **Space Optimization**
-   - **Explanation**: Some problems require memory optimization, especially when dealing with large matrices. You can sometimes modify the matrix directly to save space rather than creating new matrices.
-   - **Example**: Using a matrix for dynamic programming solutions without additional space.
+
+- **Explanation**: Some problems require memory optimization, especially when dealing with large matrices. You can sometimes modify the matrix directly to save space rather than creating new matrices.
+- **Example**: Using a matrix for dynamic programming solutions without additional space.
 
 ---
 
