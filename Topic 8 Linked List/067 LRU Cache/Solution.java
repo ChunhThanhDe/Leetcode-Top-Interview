@@ -1,6 +1,10 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2025-01-02 09:24:35
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
 
 // Class to implement LRU Cache
-
 import java.util.HashMap;
 
 class LRUCache  {
