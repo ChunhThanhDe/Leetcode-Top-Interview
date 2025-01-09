@@ -1,3 +1,9 @@
+/*
+ * @ Author: Chung Nguyen Thanh <chunhthanhde.dev@gmail.com>
+ * @ Created: 2025-01-08 08:21:56
+ * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
+ */
+
 
 // Definition for a binary tree node.
 class TreeNode {
@@ -14,7 +20,6 @@ class TreeNode {
 }
  
 
-class Solution {
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null; // Base case: empty tree
