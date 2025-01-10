@@ -4,6 +4,7 @@
     "files.encoding": "utf8",
     "cSpell.words": [
         "inorder",
+        "postorder",
         "preorder"
     ],
 }
