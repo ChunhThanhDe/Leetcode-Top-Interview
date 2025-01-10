@@ -4,12 +4,11 @@
  * @ Message: 🎯 Happy coding and Have a nice day! 🌤️
  */
 
-// Definition for a binary tree node
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// Definition for a binary tree node
 class TreeNode {
     int val;
     TreeNode left;
@@ -29,11 +28,11 @@ class TreeNode {
 /// What is preorder traversal and inorder traversall
 ///
 /// Binary Tree Structure:
-/// 1
-/// / \
-/// 2 3
-/// / \ / \
-/// 4 5 6 7
+///         1
+///       /   \
+///      2     3
+///     / \   / \
+///    4   5 6   7
 ///
 /// ----------------------------------------------------------------
 ///
@@ -141,8 +140,8 @@ class Main {
         Solution solution = new Solution();
 
         // Test Case 1
-        int[] preorder1 = {3, 9, 20, 15, 7};
-        int[] inorder1 = {9, 3, 15, 20, 7};
+        int[] preorder1 = { 3, 9, 20, 15, 7 };
+        int[] inorder1 = { 9, 3, 15, 20, 7 };
         TreeNode root1 = solution.buildTree(preorder1, inorder1);
         System.out.println("Test Case 1:");
         printTree(root1); // Expected output: Tree representation
@@ -150,8 +149,8 @@ class Main {
         System.out.println();
 
         // Test Case 2
-        int[] preorder2 = {-1};
-        int[] inorder2 = {-1};
+        int[] preorder2 = { -1 };
+        int[] inorder2 = { -1 };
         TreeNode root2 = solution.buildTree(preorder2, inorder2);
         System.out.println("Test Case 2:");
         printTree(root2); // Expected output: Tree representation
@@ -179,4 +178,3 @@ class Main {
         }
     }
 }
-
