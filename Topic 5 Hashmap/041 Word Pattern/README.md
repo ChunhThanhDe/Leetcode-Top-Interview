@@ -1,8 +1,8 @@
-## 205. Isomorphic Strings 🧩
+## 290. Word Pattern 🧩
 
 **Difficulty**: `Easy` - **Tags**: `Hash Table`, `String`
 
-[LeetCode Problem Link](https://leetcode.com/problems/isomorphich-strings/)
+[LeetCode Problem Link](https://leetcode.com/problems/word-pattern/)
 
 ---
 
