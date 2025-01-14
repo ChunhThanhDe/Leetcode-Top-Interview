@@ -1,8 +1,10 @@
 # Leetcode Top Interview 🎯
 
 ![](https://custom-icon-badges.herokuapp.com/badge/Java-E34F26.svg?logo=java&amp;logoColor=white)
+![](https://img.shields.io/badge/Sublime_Text-%23575757.svg?logo=sublime-text&amp;logoColor=important)
+![](https://img.shields.io/badge/Neovim-57A143.svg?logo=Neovim&amp;logoColor=white)
 ![](https://img.shields.io/badge/Visual_Studio_Code-0078D4?logo=visual%20studio%20code&amp;logoColor=white)
-![](https://img.shields.io/badge/Progress-41%2F150-0078D4)
+![](https://img.shields.io/badge/Progress-74%2F150-0078D4)
 
 This repository contains solutions to the Leetcode Top Interview 150 problems.
 
@@ -24,12 +26,22 @@ Show some ❤️ by starring ⭐ this repository if you like it!
 
 <a href="https://www.buymeacoffee.com/chunhthanhde" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
+## Table of Contents 📖  
+
+- **[What is Leetcode? 🧑‍💻](#what-is-leetcode)**  
+- **[About the Top Interview 150 Collection Questions 🏆](#about-the-top-interview-150-collection)**  
+- **[Tips for Solving Problems 💡](#tips-for-solving-problems)**  
+- **[Repository Structure 🗂️](#repository-structure)**  
+- **[How to Use This Repository 🚀](#how-to-use-this-repository)**  
+- **[Resources 📚](#6-resources)**  
 
 ## What is Leetcode? 🧑‍💻
 
 [Leetcode](https://leetcode.com/) is a popular online platform that provides a collection of coding challenges. Software engineers and interview candidates widely use it to practice coding skills and prepare for technical interviews. Leetcode offers many problems to solve, classified by difficulty level and topic.
 
-## About the Top Interview 150 Collection 🏆
+## About the Top Interview 150 Collection 🏆 
+
+![](https://img.shields.io/badge/Progress-74%2F150-0078D4)
 
 The Top Interview 150 collection on Leetcode is a curated set of 150 interview questions that top tech companies frequently ask. These questions are carefully selected to cover essential concepts and algorithms that interviewers expect candidates to be familiar with.
 
@@ -1510,48 +1522,42 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
 
 ## Tips for Solving Problems 💡
 
-Here are some helpful strategies to tackle different types of problems in this repository:
+SSome helpful strategies to tackle different types of problems in this repository:
 
-### 1. Heap for Top K Elements 🔼
-If you need to find the top K largest, smallest, or closest elements among N elements, use a Heap. This is efficient for problems that require constant updates to the top K elements.
 
-### 2. Binary Search or Two Pointers for Sorted Input 🔍➡️⬅️
-When working with sorted arrays, lists, or matrices, consider using Binary Search or the Two Pointers technique to optimize the solution.
 
-### 3. Backtracking or BFS for Combinations and Permutations 🔄🔍
-For problems requiring exploration of all combinations or permutations, use Backtracking or Breadth-First Search (BFS).
-
-### 4. BFS or DFS for Trees and Graphs 🌳🔗
-Most tree or graph-related problems can be solved effectively using either Breadth-First Search (BFS) or Depth-First Search (DFS).
-
-### 5. Stack for Converting Recursion to Iteration 📚
-Any problem solved by recursion can be converted to an iterative solution using a stack to simulate the call stack.
-
-### 6. Optimizing Array Problems 📊
-For array-related problems with O(n^2) solutions, you can often optimize to O(n) with a HashMap or Set, or to O(n log n) with sorting.
-
-### 7. Dynamic Programming for Optimization Problems 🚀
-Dynamic Programming is key for problems that involve maximizing or minimizing some value, leveraging previous subproblem results to build up the solution.
-
-### 8. Trie for String Manipulation 🔤
-For problems involving multiple strings or searching for common substrings, consider using a Trie or HashMap. If we need to search or manipulate multiple strings, Trie will be the most suitable data structure.
-
-### 9. Fast & Slow Pointers for Linked Lists 🔄🏃‍♂️🏃‍♀️
-In LinkedList problems where additional memory usage is restricted, use the Fast & Slow Pointers method to efficiently solve problems like detecting cycles or finding the middle element.
+| **Strategy**                                      | **Description**                                                                                                                                   | **Example Use Case**                                                                                   |
+|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **Heap for Top K Elements 🔼**                   | Use a Heap to find the top K largest, smallest, or closest elements among N elements. Efficient for problems requiring constant updates.            | Finding the top K largest numbers in a list.                                                             |
+| **Binary Search or Two Pointers for Sorted Input 🔍➡️⬅️** | Use Binary Search or Two Pointers for sorted arrays, lists, or matrices to optimize the solution.                                                 | Searching for an element in a sorted array.                                                             |
+| **Backtracking or BFS for Combinations and Permutations 🔄🔍** | Use Backtracking or BFS for problems requiring exploration of all combinations or permutations.                                                   | Finding all permutations of a set.                                                                     |
+| **BFS or DFS for Trees and Graphs 🌳🔗**          | Use BFS or DFS for tree or graph-related problems.                                                                                                 | Searching a graph or binary tree.                                                                      |
+| **Stack for Converting Recursion to Iteration 📚** | Convert recursion problems into iterative solutions using a stack to simulate the call stack.                                                     | Performing a recursive search without using recursion.                                                 |
+| **Optimizing Array Problems 📊**                 | Optimize array problems from O(n²) to O(n) using a HashMap or Set, or to O(n log n) using sorting.                                                 | Finding duplicate elements in an array.                                                                |
+| **Dynamic Programming for Optimization Problems 🚀** | Dynamic Programming is essential for problems that involve maximizing or minimizing values, using results from previous subproblems.               | Finding the maximum value in a sequence.                                                               |
+| **Trie for String Manipulation 🔤**              | For multiple strings or searching for common substrings, use a Trie or HashMap. A Trie is the most suitable data structure when manipulating multiple strings. | Searching or manipulating multiple strings efficiently.                                                 |
+| **Fast & Slow Pointers for Linked Lists 🔄🏃‍♂️🏃‍♀️** | Use Fast & Slow Pointers to efficiently solve LinkedList problems with restricted memory usage, like detecting cycles or finding the middle element. | Detecting cycles or finding the middle of a linked list.                                                |
 
 ## Repository Structure 🗂️
 
-This repository is organized by problem number, with each problem having its own directory. Inside each problem directory, you will find the solution file(s) along with a README file that provides a problem description, constraints, and additional notes if necessary.
+This repository is organized by problem number, with each problem having its own directory. 
+
+Inside each problem directory, you will find the solution file(s) along with a README file that provides a problem description, constraints, and additional notes if necessary.
 
 ## How to Use This Repository 🚀
 
-Navigate through the problem directories to explore solutions. Each directory contains the solution files, including explanations and sample input/output. You can practice implementing your solutions and compare them with those provided.
+Navigate through the problem directories to explore solutions. Each directory contains the solution files, including explanations and sample input/output. 
+
+You can practice implementing your solutions and compare them with those provided.
 
 Feel free to contribute by submitting your solutions or improvements. Open a pull request to share your contributions.
+
+I recommend contributions for new languages, as currently, the solution is only available in Java 🐛.
 
 ## Resources 📚
 
 - [Leetcode](https://leetcode.com/)
 - [Top 150 Interview Questions - Leetcode](https://leetcode.com/studyplan/top-interview-150/)
+- [GitBook Solution](https://chunhthanhde.gitbook.io/leetcode-top-interview)
 
 Happy coding and good luck with your interview preparation! 🎉
