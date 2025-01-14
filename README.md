@@ -948,8 +948,8 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
     <tr>
       <td>81</td>
       <td>Lowest Common Ancestor of a Binary Tree</td>
-      <td>Easy</td>
-      <td>🟢</td>
+      <td>Medium</td>
+      <td>🟡</td>
       <td></td>
     </tr>
     <tr>
