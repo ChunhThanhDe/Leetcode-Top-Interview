@@ -28,12 +28,12 @@ Show some ❤️ by starring ⭐ this repository if you like it!
 
 ## Table of Contents 📖  
 
-- **[What is Leetcode? 🧑‍💻](#what-is-leetcode)**  
-- **[About the Top Interview 150 Collection Questions 🏆](#about-the-top-interview-150-collection)**  
-- **[Tips for Solving Problems 💡](#tips-for-solving-problems)**  
-- **[Repository Structure 🗂️](#repository-structure)**  
-- **[How to Use This Repository 🚀](#how-to-use-this-repository)**  
-- **[Resources 📚](#6-resources)**  
+- **[What is Leetcode? 🧑‍💻](#what-is-leetcode-)**  
+- **[About the Top Interview 150 Collection Questions 🏆](#about-the-top-interview-150-collection-)**  
+- **[Tips for Solving Problems 💡](#tips-for-solving-problems-)**  
+- **[Repository Structure 🗂️](#repository-structure-%EF%B8%8F)**  
+- **[How to Use This Repository 🚀](#how-to-use-this-repository-)**  
+- **[Resources 📚](#resources-)**  
 
 ## What is Leetcode? 🧑‍💻
 
