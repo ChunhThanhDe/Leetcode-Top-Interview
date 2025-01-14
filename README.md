@@ -946,33 +946,40 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       <td></td>
     </tr>
     <tr>
+      <td>81</td>
+      <td>Lowest Common Ancestor of a Binary Tree</td>
+      <td>Easy</td>
+      <td>🟢</td>
+      <td></td>
+    </tr>
+    <tr>
       <td colspan="5" align="center">
         <strong>Binary Tree BFS</strong>
       </td>
     </tr>
     <tr>
-      <td>81</td>
+      <td>8282</td>
       <td>Binary Tree Right Side View</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>82</td>
+      <td>83</td>
       <td>Average of Levels in Binary Tree</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>83</td>
+      <td>84</td>
       <td>Binary Tree Level Order Traversal</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>84</td>
+      <td>85</td>
       <td>Binary Tree Zigzag Level Order Traversal</td>
       <td>Medium</td>
       <td>🟡</td>
@@ -1052,27 +1059,26 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       <td></td>
     </tr>
     <tr>
-      <td>95</td>
-      <td colspan="4" align="center">
+      <td colspan="5" align="center">
         <strong>Graph BFS</strong>
       </td>
     </tr>
     <tr>
-      <td>96</td>
+      <td>95</td>
       <td>Snakes and Ladders</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>97</td>
+      <td>96</td>
       <td>Minimum Genetic Mutation</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>98</td>
+      <td>97</td>
       <td>Word Ladder</td>
       <td>Hard</td>
       <td>🔴</td>
@@ -1084,21 +1090,21 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>99</td>
+      <td>98</td>
       <td>Implement Trie (Prefix Tree)</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>100</td>
+      <td>99</td>
       <td>Design Add and Search Words Data Structure</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>101</td>
+      <td>100</td>
       <td>Word Search II</td>
       <td>Hard</td>
       <td>🔴</td>
@@ -1110,49 +1116,49 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>102</td>
+      <td>101</td>
       <td>Letter Combinations of a Phone Number</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>103</td>
+      <td>102</td>
       <td>Combinations</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>104</td>
+      <td>103</td>
       <td>Permutations</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>105</td>
+      <td>104</td>
       <td>Combination Sum</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>106</td>
+      <td>105</td>
       <td>N-Queens II</td>
       <td>Hard</td>
       <td>🔴</td>
       <td></td>
     </tr>
     <tr>
-      <td>107</td>
+      <td>106</td>
       <td>Generate Parentheses</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>108</td>
+      <td>107</td>
       <td>Word Search</td>
       <td>Medium</td>
       <td>🟡</td>
@@ -1164,48 +1170,47 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>109</td>
+      <td>108</td>
       <td>Convert Sorted Array to Binary Search Tree</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>110</td>
+      <td>109</td>
       <td>Sort List</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>111</td>
+      <td>110</td>
       <td>Construct Quad Tree</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>112</td>
+      <td>111</td>
       <td>Merge k Sorted Lists</td>
       <td>Hard</td>
       <td>🔴</td>
       <td></td>
     </tr>
     <tr>
-      <td>113</td>
-      <td colspan="4" align="center">
+      <td colspan="5" align="center">
         <strong>Kadane&#39;s Algorithm</strong>
       </td>
     </tr>
     <tr>
-      <td>114</td>
+      <td>112</td>
       <td>Maximum Subarray</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>115</td>
+      <td>113</td>
       <td>Maximum Sum Circular Subarray</td>
       <td>Medium</td>
       <td>🟡</td>
@@ -1217,49 +1222,49 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>116</td>
+      <td>114</td>
       <td>Search Insert Position</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>117</td>
+      <td>115</td>
       <td>Search a 2D Matrix</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>118</td>
+      <td>116</td>
       <td>Find Peak Element</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>119</td>
+      <td>117</td>
       <td>Search in Rotated Sorted Array</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>120</td>
+      <td>118</td>
       <td>Find First and Last Position of Element in Sorted Array</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>121</td>
+      <td>119</td>
       <td>Find Minimum in Rotated Sorted Array</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>122</td>
+      <td>120</td>
       <td>Median of Two Sorted Arrays</td>
       <td>Hard</td>
       <td>🔴</td>
@@ -1271,28 +1276,28 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>123</td>
+      <td>121</td>
       <td>Kth Largest Element in an Array</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>124</td>
+      <td>122</td>
       <td>IPO</td>
       <td>Hard</td>
       <td>🔴</td>
       <td></td>
     </tr>
     <tr>
-      <td>125</td>
+      <td>123</td>
       <td>Find K Pairs with Smallest Sums</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>126</td>
+      <td>124</td>
       <td>Find Median from Data Stream</td>
       <td>Hard</td>
       <td>🔴</td>
@@ -1304,42 +1309,42 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>127</td>
+      <td>125</td>
       <td>Add Binary</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>128</td>
+      <td>126</td>
       <td>Reverse Bits</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>129</td>
+      <td>127</td>
       <td>Number of 1 Bits</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>130</td>
+      <td>128</td>
       <td>Single Number</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>131</td>
+      <td>129</td>
       <td>Single Number II</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>132</td>
+      <td>130</td>
       <td>Bitwise AND of Numbers Range</td>
       <td>Medium</td>
       <td>🟡</td>
@@ -1351,42 +1356,42 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>133</td>
+      <td>131</td>
       <td>Palindrome Number</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>134</td>
+      <td>132</td>
       <td>Plus One</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>135</td>
+      <td>133</td>
       <td>Factorial Trailing Zeroes</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>136</td>
+      <td>134</td>
       <td>Sqrt(x)</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>137</td>
+      <td>135</td>
       <td>Pow(x, n)</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>138</td>
+      <td>136</td>
       <td>Max Points on a Line</td>
       <td>Hard</td>
       <td>🔴</td>
@@ -1398,35 +1403,35 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>139</td>
+      <td>137</td>
       <td>Climbing Stairs</td>
       <td>Easy</td>
       <td>🟢</td>
       <td></td>
     </tr>
     <tr>
-      <td>140</td>
+      <td>138</td>
       <td>House Robber</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>141</td>
+      <td>139</td>
       <td>Word Break</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>142</td>
+      <td>140</td>
       <td>Coin Change</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>143</td>
+      <td>141</td>
       <td>Longest Increasing Subsequence</td>
       <td>Medium</td>
       <td>🟡</td>
@@ -1438,63 +1443,63 @@ The Top Interview 150 collection on Leetcode is a curated set of 150 interview q
       </td>
     </tr>
     <tr>
-      <td>144</td>
+      <td>142</td>
       <td>Triangle</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>145</td>
+      <td>143</td>
       <td>Minimum Path Sum</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>146</td>
+      <td>144</td>
       <td>Unique Paths II</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>147</td>
+      <td>145</td>
       <td>Longest Palindromic Substring</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>148</td>
+      <td>146</td>
       <td>Interleaving String</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>149</td>
+      <td>147</td>
       <td>Edit Distance</td>
       <td>Medium</td>
       <td>🟡</td>
       <td></td>
     </tr>
     <tr>
-      <td>150</td>
+      <td>148</td>
       <td>Best Time to Buy and Sell Stock III</td>
       <td>Hard</td>
       <td>🔴</td>
       <td></td>
     </tr>
     <tr>
-      <td>151</td>
+      <td>149</td>
       <td>Best Time to Buy and Sell Stock IV</td>
       <td>Hard</td>
       <td>🔴</td>
       <td></td>
     </tr>
     <tr>
-      <td>152</td>
+      <td>150</td>
       <td>Maximal Square</td>
       <td>Medium</td>
       <td>🟡</td>
