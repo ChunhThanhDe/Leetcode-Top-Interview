@@ -14,6 +14,8 @@ These problems are commonly asked in technical interviews and cover a wide range
 
 Show some ❤️ by starring ⭐ this repository if you like it!
 
+> If you want to support me, help me sub my YouTube channel [CHUNGCINE](https://www.youtube.com/@CHUNGCINE?sub_confirmation=1). Thank you so much <3 
+
 ###### Contact for work, email: chunhthanhde.dev@gmail.com
 
 <img src="https://leetcode.com/static/images/LeetCode_logo.png" alt="LeetCode Logo" width="80">
